@@ -1,0 +1,411 @@
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.csproj.AssemblyReference.cache
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.json
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.development.json
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.CoffeeBook.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.build.CoffeeBook.props
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.buildMultiTargeting.CoffeeBook.props
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.buildTransitive.CoffeeBook.props
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.pack.json
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\CoffeeBook.styles.css
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\CoffeeBook.bundle.scp.css
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.publish.json
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.exe
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.deps.json
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.runtimeconfig.json
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.pdb
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Authorization.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.Forms.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.Web.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.WebView.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.WebView.Maui.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Metadata.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Binder.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Json.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Composite.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Debug.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Options.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Primitives.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.Interop.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.JSInterop.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Compatibility.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Xaml.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Essentials.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.InteractiveExperiences.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WinUI.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppLifecycle.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppNotifications.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.PushNotifications.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Security.AccessControl.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Power.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Release.Net.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.IO.Pipelines.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ar\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ca\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\cs\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\da\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\de\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\el\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\es\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\fi\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\fr\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\he\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\hi\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\hr\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\hu\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\id\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\it\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ja\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ko\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ms\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\nb\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\nl\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\pl\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\pt-BR\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\pt\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ro\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ru\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\sk\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\sv\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\th\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\tr\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\uk\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\vi\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.stamp
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.AssemblyInfoInputs.cache
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.AssemblyInfo.cs
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.csproj.CoreCompileInputs.cache
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.sourcelink.json
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlC.stamp
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.csproj.CopyComplete
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\refint\CoffeeBook.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.pdb
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.genruntimeconfig.cache
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ref\CoffeeBook.dll
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\priconfig.xml
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\priconfig.xml.intermediate
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\unfiltered.layout.resfiles
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\unfiltered.layout.resfiles.intermediate
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\filtered.layout.resfiles
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\filtered.layout.resfiles.intermediate
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\excluded.layout.resfiles
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\excluded.layout.resfiles.intermediate
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.resfiles
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.resfiles.intermediate
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pri.resfiles
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pri.resfiles.intermediate
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Documents\Final Years\.NET Application Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.exe
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.deps.json
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.runtimeconfig.json
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.pdb
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Authorization.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.Forms.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.Web.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.WebView.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Components.WebView.Maui.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.AspNetCore.Metadata.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Binder.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Json.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Composite.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Debug.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Options.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Primitives.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.Interop.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.JSInterop.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Compatibility.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Xaml.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Essentials.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.InteractiveExperiences.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WinUI.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppLifecycle.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppNotifications.Builder.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppNotifications.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.Resources.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.PushNotifications.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Security.AccessControl.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Power.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.Widgets.Projection.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Release.Net.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.IO.Pipelines.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ar\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ca\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\cs\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\da\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\de\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\el\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\es\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\fi\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\fr\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\he\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\hi\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\hr\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\hu\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\id\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\it\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ja\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ko\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ms\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\nb\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\nl\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\pl\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\pt-BR\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\pt\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ro\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ru\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\sk\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\sv\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\th\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\tr\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\uk\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\vi\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-HK\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-Hans\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-Hant\Microsoft.Maui.Controls.resources.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.csproj.AssemblyReference.cache
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.json
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.development.json
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.CoffeeBook.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.build.CoffeeBook.props
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.buildMultiTargeting.CoffeeBook.props
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets\msbuild.buildTransitive.CoffeeBook.props
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.pack.json
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\CoffeeBook.styles.css
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\CoffeeBook.bundle.scp.css
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.publish.json
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.GeneratedMSBuildEditorConfig.editorconfig
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.stamp
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.stamp
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.stamp
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.AssemblyInfoInputs.cache
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.AssemblyInfo.cs
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.csproj.CoreCompileInputs.cache
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlC.stamp
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.csproj.CopyComplete
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\refint\CoffeeBook.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.pdb
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.genruntimeconfig.cache
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ref\CoffeeBook.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\priconfig.xml
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\priconfig.xml.intermediate
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\unfiltered.layout.resfiles
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\unfiltered.layout.resfiles.intermediate
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\filtered.layout.resfiles
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\filtered.layout.resfiles.intermediate
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\excluded.layout.resfiles
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\excluded.layout.resfiles.intermediate
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.resfiles
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.resfiles.intermediate
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pri.resfiles
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pri.resfiles.intermediate
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
