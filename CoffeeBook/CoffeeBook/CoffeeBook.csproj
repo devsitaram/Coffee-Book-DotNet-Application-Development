@@ -58,6 +58,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <AndroidResource Remove="Data\Models\NewFolder\**" />
+      <Compile Remove="Data\Models\NewFolder\**" />
+      <Content Remove="Data\Models\NewFolder\**" />
+      <EmbeddedResource Remove="Data\Models\NewFolder\**" />
+      <MauiXaml Remove="Data\Models\NewFolder\**" />
+      <None Remove="Data\Models\NewFolder\**" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="$(MauiVersion)" />

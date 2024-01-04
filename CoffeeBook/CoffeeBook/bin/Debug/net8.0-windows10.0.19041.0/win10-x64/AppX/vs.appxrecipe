@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-03T02:35:26.305</Modified>
+      <Modified>2024-01-04T01:35:04.638</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-03T02:35:26.148</Modified>
+      <Modified>2024-01-04T01:35:04.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.runtimeconfig.json">
       <PackagePath>CoffeeBook.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-03T02:31:30.205</Modified>
+      <Modified>2024-01-04T01:28:09.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.dll">
       <PackagePath>CoffeeBook.dll</PackagePath>
-      <Modified>2024-01-03T02:35:25.991</Modified>
+      <Modified>2024-01-04T01:35:04.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CoffeeBook.exe</PackagePath>
-      <Modified>2024-01-03T02:35:25.993</Modified>
+      <Modified>2024-01-04T01:35:04.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -304,7 +304,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.deps.json">
       <PackagePath>CoffeeBook.deps.json</PackagePath>
-      <Modified>2024-01-03T02:31:30.202</Modified>
+      <Modified>2024-01-04T01:28:09.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -313,6 +313,10 @@
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-10-16T19:41:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\harfbuzzsharp\7.3.0\lib\net6.0\HarfBuzzSharp.dll">
+      <PackagePath>HarfBuzzSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.aspnetcore.authorization\8.0.0\lib\net8.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
@@ -506,6 +510,18 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Release.Net.dll</PackagePath>
       <Modified>2023-07-24T19:10:10.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\questpdf\2023.12.2\lib\net6.0\QuestPDF.dll">
+      <PackagePath>QuestPDF.dll</PackagePath>
+      <Modified>2024-01-01T16:27:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\skiasharp\2.88.6\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\skiasharp.harfbuzz\2.88.6\lib\net6.0\SkiaSharp.HarfBuzz.dll">
+      <PackagePath>SkiaSharp.HarfBuzz.dll</PackagePath>
+      <Modified>2023-09-20T18:13:26.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\system.io.pipelines\8.0.0\lib\net8.0\System.IO.Pipelines.dll">
       <PackagePath>System.IO.Pipelines.dll</PackagePath>
       <Modified>2023-10-31T14:59:26.000</Modified>
@@ -646,6 +662,10 @@
       <PackagePath>zh-Hant\Microsoft.Maui.Controls.resources.dll</PackagePath>
       <Modified>2023-11-07T20:45:40.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\harfbuzzsharp.nativeassets.win32\7.3.0\runtimes\win-x64\native\libHarfBuzzSharp.dll">
+      <PackagePath>libHarfBuzzSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:34.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2023-05-31T20:12:36.000</Modified>
@@ -653,6 +673,10 @@
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.windowsappsdk\1.3.230724000\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2023-04-28T12:58:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\skiasharp.nativeassets.win32\2.88.6\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:38.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.maui.controls.compatibility\8.0.3\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

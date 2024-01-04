@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ic4kbPMziWCBfcnrDEtEdfSEoEcUI+qeKRGYog6YgvI=",
+  "Hash": "YUVVNI/bHVZR6maTeP8+x3iZAvHh8MxVNILTqmtgJXI=",
   "Source": "CoffeeBook",
   "BasePath": "/",
   "Mode": "Root",
@@ -10,17 +10,17 @@
     {
       "Name": "CoffeeBook\\wwwroot",
       "Source": "CoffeeBook",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\CoffeeBook.styles.css",
+      "Identity": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\CoffeeBook.styles.css",
       "SourceId": "CoffeeBook",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\",
       "BasePath": "/",
       "RelativePath": "CoffeeBook.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\CoffeeBook.styles.css"
+      "OriginalItemSpec": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\CoffeeBook.styles.css"
     },
     {
-      "Identity": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\CoffeeBook.bundle.scp.css",
+      "Identity": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\CoffeeBook.bundle.scp.css",
       "SourceId": "CoffeeBook",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\",
       "BasePath": "/",
       "RelativePath": "CoffeeBook.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\CoffeeBook.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\CoffeeBook.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\css\\app.css",
+      "Identity": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\css\\app.css",
       "SourceId": "CoffeeBook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "CoffeeBook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "CoffeeBook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\favicon.png",
+      "Identity": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\favicon.png",
       "SourceId": "CoffeeBook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\index.html",
+      "Identity": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\index.html",
       "SourceId": "CoffeeBook",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
+      "ContentRoot": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index.html",
       "AssetKind": "All",

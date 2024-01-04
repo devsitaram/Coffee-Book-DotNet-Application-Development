@@ -409,3 +409,10 @@ C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj
 C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\HarfBuzzSharp.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\QuestPDF.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\SkiaSharp.HarfBuzz.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\libHarfBuzzSharp.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\libSkiaSharp.dll
+C:\Documents\FinalYears\DOTNET_Application_Development\CoffeeBook\CoffeeBook\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\CoffeeBook.sourcelink.json

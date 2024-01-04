@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj": {}
+    "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj": {}
   },
   "projects": {
-    "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj": {
+    "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj",
+        "projectUniqueName": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj",
         "projectName": "CoffeeBook",
-        "projectPath": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj",
+        "projectPath": "C:\\Documents\\FinalYears\\DotNet_Application_Development\\CoffeeBook\\CoffeeBook\\CoffeeBook.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
         "outputPath": "C:\\Documents\\FinalYears\\DOTNET_Application_Development\\CoffeeBook\\CoffeeBook\\obj\\",
         "projectStyle": "PackageReference",
