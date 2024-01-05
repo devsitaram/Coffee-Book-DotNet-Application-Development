@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using BisleriumCafe.Models;
+using BisleriumCafe.Data.Models;
 using QuestPDF.Fluent;
 
-namespace BisleriumCafe.Services
+namespace BisleriumCafe.Data.Services
 {
     public static class PDFServices
     {

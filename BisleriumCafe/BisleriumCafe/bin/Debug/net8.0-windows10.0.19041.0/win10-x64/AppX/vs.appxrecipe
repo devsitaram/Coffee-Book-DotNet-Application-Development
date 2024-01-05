@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-05T15:16:01.275</Modified>
+      <Modified>2024-01-05T20:05:50.412</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-05T15:16:01.069</Modified>
+      <Modified>2024-01-05T20:05:50.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.runtimeconfig.json">
       <PackagePath>BisleriumCafe.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-05T14:12:59.485</Modified>
+      <Modified>2024-01-05T18:47:05.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.dll">
       <PackagePath>BisleriumCafe.dll</PackagePath>
-      <Modified>2024-01-05T15:16:00.311</Modified>
+      <Modified>2024-01-05T20:03:15.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BisleriumCafe.exe</PackagePath>
-      <Modified>2024-01-05T15:16:00.327</Modified>
+      <Modified>2024-01-05T20:03:15.641</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -304,7 +304,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.deps.json">
       <PackagePath>BisleriumCafe.deps.json</PackagePath>
-      <Modified>2024-01-05T14:12:59.431</Modified>
+      <Modified>2024-01-05T19:19:55.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -697,6 +697,182 @@
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\BisleriumCafe.bundle.scp.css">
       <PackagePath>wwwroot\BisleriumCafe.bundle.scp.css</PackagePath>
       <Modified>2024-01-05T02:37:27.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.css">
+      <PackagePath>wwwroot\css\bootstrap.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.css.map">
+      <PackagePath>wwwroot\css\bootstrap.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.min.css">
+      <PackagePath>wwwroot\css\bootstrap.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-grid.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-grid.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-reboot.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-reboot.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.min.css</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap-utilities.rtl.min.css.map">
+      <PackagePath>wwwroot\css\bootstrap-utilities.rtl.min.css.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js">
+      <PackagePath>wwwroot\js\bootstrap.bundle.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.js.map">
+      <PackagePath>wwwroot\js\bootstrap.bundle.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js">
+      <PackagePath>wwwroot\js\bootstrap.bundle.min.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.bundle.min.js.map">
+      <PackagePath>wwwroot\js\bootstrap.bundle.min.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js">
+      <PackagePath>wwwroot\js\bootstrap.esm.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.js.map">
+      <PackagePath>wwwroot\js\bootstrap.esm.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js">
+      <PackagePath>wwwroot\js\bootstrap.esm.min.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.esm.min.js.map">
+      <PackagePath>wwwroot\js\bootstrap.esm.min.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.js">
+      <PackagePath>wwwroot\js\bootstrap.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.js.map">
+      <PackagePath>wwwroot\js\bootstrap.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js">
+      <PackagePath>wwwroot\js\bootstrap.min.js</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map">
+      <PackagePath>wwwroot\js\bootstrap.min.js.map</PackagePath>
+      <Modified>2023-09-14T15:48:24.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Layout\MainLayout.razor.css">
       <PackagePath>Components\Layout\MainLayout.razor.css</PackagePath>

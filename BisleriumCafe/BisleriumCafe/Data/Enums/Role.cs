@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BisleriumCafe.Models
+namespace BisleriumCafe.Data.Enums
 {
-    internal class CoffeeOrder
+    public enum Role
     {
-
+        Staff,
+        Admin
     }
 }

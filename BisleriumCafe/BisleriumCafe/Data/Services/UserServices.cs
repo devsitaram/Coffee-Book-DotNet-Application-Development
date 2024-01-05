@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using BisleriumCafe.Enums;
-using BisleriumCafe.Models;
+using BisleriumCafe.Data.Enums;
+using BisleriumCafe.Data.Models;
 
-namespace BisleriumCafe.Services
+namespace BisleriumCafe.Data.Services
 {
     public class UserServices
     {
-        public const string SeedUsername = "admin";
-        public const string SeedPassword = "admin";
-
- 
+        public const Role SeedRole = Role.Admin;
+        public const string SeedPassword = "Admin";
 
         public static List<User> GetAllUser()
         {
@@ -30,7 +28,7 @@ namespace BisleriumCafe.Services
         }
 
         // create the user
-        public static List<User> CreateNewUser(Guid userId, string password, Role role)
+        public static List<User> CreateNewUser(string password, Role role)
         {
             List<User> users = GetAllUser();
             bool usernameExists = users.Any(x => x.Role == role);
@@ -57,7 +55,8 @@ namespace BisleriumCafe.Services
 
             if (users == null)
             {
-                CreateNewUser(Guid.Empty, SeedPassword, Role.Admin);
+                CreateNewUser("Admin", Role.Admin);
+                CreateNewUser("Staff", Role.Staff);
             }
         }
 
@@ -84,19 +83,17 @@ namespace BisleriumCafe.Services
             return users;
         }
 
-
-
         public static User Login(Role role, string password)
         {
             var loginErrorMessage = "Invalid rolr or password.";
             List<User> users = GetAllUser();
             User user = users.FirstOrDefault(x => x.Role == role);
-
             if (user == null)
             {
                 throw new Exception(loginErrorMessage);
             }
 
+            //checking if the password is valid or not using password hash 
             bool passwordIsValid = Utils.VerifyHash(password, user.PasswordHash);
 
             if (!passwordIsValid)

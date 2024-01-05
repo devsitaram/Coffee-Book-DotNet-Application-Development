@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BisleriumCafe.Models
+namespace BisleriumCafe.Data.Models
 {
     internal class CoffeeAddIn
     {

@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BisleriumCafe.Services
+namespace BisleriumCafe.Data.Services
 {
     public static class Utils
     {
@@ -18,7 +18,7 @@ namespace BisleriumCafe.Services
 
         public static string GetUsersFilePath()
         {
-           return Path.Combine(GetAppDirectoryPath(), "users.json");
+            return Path.Combine(GetAppDirectoryPath(), "users.json");
         }
 
         public static string GetOrderFilePath()

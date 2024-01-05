@@ -1,0 +1,87 @@
+﻿@page "/login"
+@inject NavigationManager NavManager
+
+<div class="login-container d-flex align-items-center justify-content-center">
+    <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="card-body">
+            <h1 class="card-title text-center mb-5">Bislerium Coffee Station</h1>
+
+            <div class="form-group">
+                <label class="form-label">Role</label>
+
+                <select class="form-control" id="roleSelect" bind="@role">
+                    @foreach (var enumValue in Enum.GetValues(typeof(BisleriumCafe.Data.Enums.Role)))
+                    {
+                        <option value="@enumValue">@enumValue</option>
+                    }
+                </select ><br />
+
+                <label class="form-label">Password</label>
+                <input class="form-control" bind="@password" /> <br />
+
+                <button class="align-content-center" onclick="@loginHandler">Log In</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [CascadingParameter]
+    private GlobalState globalState { get; set; }
+    private bool showDefaultCredentials { get; set; }
+    private Role role { get; set; }
+    private string password { get; set; }
+    private string errorMessage = "";
+
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            var user = UserServices.Login(UserServices.SeedRole, UserServices.SeedPassword);
+            showDefaultCredentials = user.HasInitialPassword;
+        }
+        catch(Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+    }
+
+    private void loginHandler()
+    {
+        try
+        {
+            errorMessage = "";
+            globalState.CurrentUser = UserServices.Login(role, password);
+            if (globalState.CurrentUser != null)
+            {
+                NavManager.NavigateTo(globalState.CurrentUser.HasInitialPassword ? "/weather" : "/");
+            }
+        }
+        catch (Exception e)
+        {
+            errorMessage = e.Message;
+            Console.WriteLine(e);
+        }
+    }
+
+    // private void loginHandler()
+    // {        
+    //     try
+    //     {
+    //         globalState.CurrentUser = UserServices.Login(role, password);
+    //         if (globalState.CurrentUser != null)
+    //         {
+    //             NavManager.NavigateTo(globalState.CurrentUser.HasInitialPassword ? "/weather" : "/");
+    //         } else {
+    //             errorMessage = "Invalid user";
+    //         }
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         errorMessage = e.Message;
+    //         Console.WriteLine(e);
+    //     }
+    // }
+}

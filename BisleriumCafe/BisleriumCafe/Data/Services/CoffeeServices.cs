@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using BisleriumCafe.Models;
+using BisleriumCafe.Data.Models;
 
-namespace BisleriumCafe.Services
+namespace BisleriumCafe.Data.Services
 {
     public class CoffeeServices
     {
