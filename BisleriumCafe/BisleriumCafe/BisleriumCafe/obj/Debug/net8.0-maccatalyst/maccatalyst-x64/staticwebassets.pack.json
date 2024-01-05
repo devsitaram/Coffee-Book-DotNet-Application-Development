@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\user\\assign\\year3\\ApplicationDevelopment\\CW1\\BisleriumCafe\\BisleriumCafe\\obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\scopedcss\\bundle\\BisleriumCafe.styles.css",
+      "PackagePath": "staticwebassets\\BisleriumCafe.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\assign\\year3\\ApplicationDevelopment\\CW1\\BisleriumCafe\\BisleriumCafe\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\assign\\year3\\ApplicationDevelopment\\CW1\\BisleriumCafe\\BisleriumCafe\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\assign\\year3\\ApplicationDevelopment\\CW1\\BisleriumCafe\\BisleriumCafe\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\user\\assign\\year3\\ApplicationDevelopment\\CW1\\BisleriumCafe\\BisleriumCafe\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\assign\\year3\\ApplicationDevelopment\\CW1\\BisleriumCafe\\BisleriumCafe\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.BisleriumCafe.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.build.BisleriumCafe.props",
+      "PackagePath": "build\\BisleriumCafe.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.buildMultiTargeting.BisleriumCafe.props",
+      "PackagePath": "buildMultiTargeting\\BisleriumCafe.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-maccatalyst\\maccatalyst-x64\\staticwebassets\\msbuild.buildTransitive.BisleriumCafe.props",
+      "PackagePath": "buildTransitive\\BisleriumCafe.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

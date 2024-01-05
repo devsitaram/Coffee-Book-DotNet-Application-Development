@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Downloads\\BisleriumCafe\\BisleriumCafe\\BisleriumCafe\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\BisleriumCafe.styles.css",
+      "PackagePath": "staticwebassets\\BisleriumCafe.styles.css"
+    },
+    {
+      "Id": "C:\\Downloads\\BisleriumCafe\\BisleriumCafe\\BisleriumCafe\\wwwroot\\css\\bootstrap\\app.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\app.css"
+    },
+    {
+      "Id": "C:\\Downloads\\BisleriumCafe\\BisleriumCafe\\BisleriumCafe\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Downloads\\BisleriumCafe\\BisleriumCafe\\BisleriumCafe\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Downloads\\BisleriumCafe\\BisleriumCafe\\BisleriumCafe\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Downloads\\BisleriumCafe\\BisleriumCafe\\BisleriumCafe\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.BisleriumCafe.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.BisleriumCafe.props",
+      "PackagePath": "build\\BisleriumCafe.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.BisleriumCafe.props",
+      "PackagePath": "buildMultiTargeting\\BisleriumCafe.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.BisleriumCafe.props",
+      "PackagePath": "buildTransitive\\BisleriumCafe.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
