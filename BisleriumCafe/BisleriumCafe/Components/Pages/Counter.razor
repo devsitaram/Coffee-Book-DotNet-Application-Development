@@ -1,16 +1,46 @@
 ﻿@page "/counter"
 
-<h1>Counter</h1>
+<h1>Place Your Coffee Order</h1>
 
-<p role="status">Current count: @currentCount</p>
+<div>
+    <h2>Select Coffee</h2>
+    <select @bind="selectedCoffee">
+        @foreach (var coffee in coffeeTypes)
+        {
+            <option value="@coffee">@coffee</option>
+        }
+    </select>
+</div>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<div>
+    <h2>Select Add-ins</h2>
+    @foreach (var addin in addIns)
+    {
+        <label>
+            <input type="checkbox" @bind="selectedAddIns[addin]" /> @addin
+        </label>
+        <br />
+    }
+</div>
+
+<button @onclick="PlaceOrder">Place Order</button>
 
 @code {
-    private int currentCount = 0;
+    private List<string> coffeeTypes = new List<string> { "Cappuccino", "Espresso", /* Add more coffee types */ };
+    private List<string> addIns = new List<string> { "Milk", "Sugar", /* Add more add-ins */ };
 
-    private void IncrementCount()
+    private string selectedCoffee { get; set; }
+    private Dictionary<string, bool> selectedAddIns = new Dictionary<string, bool>();
+
+    [Inject]
+    private OrderService orderService { get; set; }
+
+    private async Task PlaceOrder()
     {
-        currentCount++;
+        var selectedAddInsList = selectedAddIns.Where(x => x.Value).Select(x => x.Key).ToList();
+        var order = new CoffeesOrder { CoffeeType = selectedCoffee, AddIns = selectedAddInsList };
+
+        await orderService.PlaceOrder(order);
+        // Redirect or perform other actions after placing the order
     }
 }

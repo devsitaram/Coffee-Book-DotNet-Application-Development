@@ -1,0 +1,158 @@
+﻿@page "/order/{CoffeeName}/{CoffeePrice}"
+
+<div class="container">
+    <h1>Order Coffee</h1>
+
+    <div class="coffee-details">
+        <label for="coffeeName">Coffee Name:</label>
+        <input id="coffeeName" class="form-control" readonly value="@CoffeeName" />
+
+        <label for="coffeePrice">Coffee Price:</label>
+        <input id="coffeePrice" class="form-control price-input" readonly @bind="@ParseCoffeePrice" />
+
+        <div class="add">
+            <div class="add-in-input">
+                <label for="add">Add in flavors</label>
+                <select id="add-ins" class="form-control" onchange="updateTotalPrice()">
+                    <option value="cinnamon" data-price="0">Cinnamon - Rs 0.00</option>
+                    <option value="honey" data-price="1.0">Honey - Rs 1.00</option>
+                    <option value="ginger" data-price="1.5">Ginger - Rs 1.50</option>
+                    <option value="chocolate" data-price="1.5">Chocolate - Rs 1.50</option>
+                    <option value="ice-cream" data-price="1.5">Ice Cream - Rs 1.50</option>
+                    <!-- Add more cream options as needed --> 
+                </select>
+            </div>
+
+            <div class="add-in-input">
+                <select id="add-ins" class="form-control">
+                @foreach (var addIn in listOfAddIns)
+                {
+                   <option value="@addIn.AddName" data-price="@addIn.AddPrice">@($"{addIn.AddName} - Rs {addIn.AddPrice}")</option>
+                }
+                </select>
+            </div>
+        </div>
+
+        <label for="customerNumber">Customer Number:</label>
+        <input id="customerNumber" class="form-control" value="@CustomerNumber" />
+
+        <!-- Display the price -->
+        <label for="sugar">Total Price:</label>
+        <div class="price-display">$@TotalCoffeePrice</div>
+
+        <button class="btn btn-primary" @onclick="() => orderConfirm()">Confirm</button>
+    </div>
+</div>
+
+<script>
+    function updateTotalPrice() {
+        var selectedMilk = document.getElementById('milk').value;
+        var selectedSugar = document.getElementById('sugar').value;
+        var selectedCream = document.getElementById('cream').value;
+
+        var totalPrice = parseFloat(document.getElementById('milk').dataset.price) +
+            parseFloat(document.getElementById('sugar').dataset.price) +
+            parseFloat(document.getElementById('cream').dataset.price);
+
+        document.getElementById('totalPrice').textContent = '$' + totalPrice.toFixed(2);
+    }
+</script>
+
+@code {
+    [Parameter]
+    public string CoffeeName { get; set; }
+
+    [Parameter]
+    public string CoffeePrice { get; set; }
+
+    public int CustomerNumber { get; set; }
+
+    public double ParseCoffeePrice { get; set; } 
+
+    public double TotalCoffeePrice { get; set; }
+
+    private List<CoffeeAddIn> listOfAddIns;
+    private CoffeeAddIn addInsModel = new();
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            listOfAddIns = CoffeeAddInServices.GetAllAddIn();
+            if (double.TryParse(CoffeePrice, out double parsedPrice))
+            {
+                ParseCoffeePrice = parsedPrice;
+            }
+            else
+            {
+                ParseCoffeePrice = 0; // Handle parsing error
+            }
+            TotalCoffeePrice = ParseCoffeePrice + 100;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in OnInitialized: {ex.Message}");
+            listOfAddIns = new List<CoffeeAddIn>(); // Initialize an empty list if an error occurs
+        }
+    }
+
+    private void CalculateTotalCoffeePrice()
+    {
+        TotalCoffeePrice = ParseCoffeePrice + 100; // Initial price calculation
+
+        if (!string.IsNullOrEmpty(addInsModel.AddName) && listOfAddIns != null)
+        {
+            var selectedAddIn = listOfAddIns.FirstOrDefault(a => a.AddName == addInsModel.AddName);
+            if (selectedAddIn != null)
+            {
+                TotalCoffeePrice += selectedAddIn.AddPrice; // Add the selected add-in's price
+            }
+        }
+    }
+
+    public void orderConfirm(){
+        TotalCoffeePrice = ParseCoffeePrice + 100;
+    }
+}
+
+
+
+
+<style>
+    .container {
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    .coffee-details {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .price-input {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .price-display {
+        margin-top: 10px;
+        padding: 8px;
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+</style>

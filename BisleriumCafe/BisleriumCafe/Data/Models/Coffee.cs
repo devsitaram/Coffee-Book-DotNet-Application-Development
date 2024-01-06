@@ -8,7 +8,8 @@ namespace BisleriumCafe.Data.Models
 {
     public class Coffee
     {
-        public required string coffeeName { get; set; }
-        public double coffeePrice { get; set; }
+        public Guid Id { get; set; } = new Guid();
+        public string CoffeeName { get; set; }
+        public double CoffeePrice { get; set; }
     }
 }

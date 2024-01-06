@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BisleriumCafe.Data.Models
 {
-    internal class CoffeeAddIn
+    public class CoffeeAddIn
     {
-        public string addName { get; set; }
-        public string addPrice { get; set; }
+        public string AddName { get; set; }
+        public double AddPrice { get; set; }
     }
 }
