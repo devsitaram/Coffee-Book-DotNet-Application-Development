@@ -22,53 +22,83 @@ namespace BisleriumCafe.Data.Services
             return new List<CoffeeAddIn>();
         }
 
-        public static void SaveAllAddIn(List<CoffeeAddIn> addIns)
-        {
-            string addInFilePath = Utils.GetAddInFilePath();
-            string appDirectoryFilePath = Utils.GetAppDirectoryPath();
-
-            if (!Directory.Exists(appDirectoryFilePath))
-            {
-                Directory.CreateDirectory(appDirectoryFilePath);
-            }
-
-            var json = JsonSerializer.Serialize(addIns);
-            File.WriteAllText(addInFilePath, json);
-        }
-
         public static List<CoffeeAddIn> CreateAddIn(string name, double price)
         {
-            List<CoffeeAddIn> addIns = GetAllAddIn();
-            bool addInExists = addIns.Any(x => x.AddName == name);
+            try
+            {
+                List<CoffeeAddIn> addIns = GetAllAddIn();
+                bool addInExists = addIns.Any(x => x.AddName == name);
 
-            if (addInExists)
+                if (addInExists)
+                {
+                    throw new Exception("Username already exists.");
+                } 
+                else
+                {
+                    addIns.Add(
+                    new CoffeeAddIn
+                    {
+                        AddName = name,
+                        AddPrice = price
+                    });
+                    SaveAllAddIn(addIns);
+                    return addIns;
+                }
+            } catch(Exception ex)
             {
                 throw new Exception("Username already exists.");
             }
-
-            addIns.Add(
-                new CoffeeAddIn
-                {
-                    AddName = name,
-                    AddPrice = price
-                });
-            SaveAllAddIn(addIns);
-            return addIns;
         }
 
         public static void SeedAddIns()
         {
-            var coffeeList = GetAllAddIn();
-            if (coffeeList == null)
-            {
                 CreateAddIn("Cinnamon", 25.00);
                 CreateAddIn("Honey", 30.00);
                 CreateAddIn("Ginger", 45.00);
                 CreateAddIn("Chocolate", 20.00);
                 CreateAddIn("Ice Cream", 35.00);
+        }
+
+        public static void SaveAllAddIn(List<CoffeeAddIn> addIns)
+        {
+            string addInFilePath = Utils.GetAddInFilePath();
+            string appDirectoryFilePath = Utils.GetAppDirectoryPath();
+
+            try
+            {
+                if (!Directory.Exists(appDirectoryFilePath))
+                {
+                    Directory.CreateDirectory(appDirectoryFilePath);
+                }
+
+                var json = JsonSerializer.Serialize(addIns);
+
+                // Write the JSON content to the file
+                using (StreamWriter streamWriter = File.CreateText(addInFilePath))
+                {
+                    streamWriter.Write(json);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error while saving coffee data: {ex.Message}");
             }
         }
 
+        public static List<CoffeeAddIn> DeleteAddIn(string addName)
+        {
+            List<CoffeeAddIn> listOfAddIn = GetAllAddIn();
+            CoffeeAddIn coffee = listOfAddIn.FirstOrDefault(x => x.AddName == addName);
+
+            if (coffee == null)
+            {
+                throw new Exception("Coffee not available.");
+            }
+
+            listOfAddIn.Remove(coffee); // Remove the coffee from the list
+            SaveAllAddIn(listOfAddIn); // Save the updated list of coffees
+            return listOfAddIn; // Return the updated list of coffees
+        }
 
         // flavor add 
         //public Task<List<CoffeeAddIn>> GetAllAddIns()

@@ -17,7 +17,7 @@ namespace BisleriumCafe.Data.Services
                 List<Coffee> listOfCoffee = GetAllCoffee();
                 Coffee existingCoffee = listOfCoffee.FirstOrDefault(x => x.CoffeeName == coffeeName);
 
-                if (existingCoffee != null)
+                if (existingCoffee == null)
                 {
                     existingCoffee.CoffeePrice = coffeePrice; // Update price if the coffee exists
                 }
@@ -85,7 +85,6 @@ namespace BisleriumCafe.Data.Services
         {
             string coffeeFilePath = Utils.GetCoffeeFilePath();
             string appCoffeeFilePath = Utils.GetAppDirectoryPath();
-
             try
             {
                 if (!Directory.Exists(appCoffeeFilePath))
@@ -104,7 +103,6 @@ namespace BisleriumCafe.Data.Services
             catch (Exception ex)
             {
                 Console.WriteLine($"Error while saving coffee data: {ex.Message}");
-                // Handle the exception as needed (log, rethrow, etc.)
             }
         }
 

@@ -1,0 +1,124 @@
+﻿@page "/addCoffee"
+
+@* @inject NavigationManager NavManager *@
+
+<div class="container">
+    <h1>Add New Coffee</h1>
+
+    <div class="add-coffee-form">
+        <label for="coffeeName">Name:</label>
+        <input id="coffeeName" class="form-control" @bind="@Name" />
+
+        <label for="coffeePrice">Price:</label>
+        <input id="coffeePrice" class="form-control" @bind="@Price" />
+
+        <button class="btn btn-primary" @onclick="AddCoffeeAction">Add Coffee</button>
+        <button class="btn btn-primary" @onclick="AddInCoffeeFlavor">Add In Flavor</button>
+        
+        @if (!string.IsNullOrEmpty(message))
+        {
+            <div class="alert alert-success" role="alert">
+                @message
+            </div>
+        }
+    </div>
+    <br />
+</div>
+
+@code {
+    private string Name = "";
+    private double Price = 0.0;
+    private string message = "";
+
+    private async Task AddCoffeeAction()
+    {
+        try
+        {
+            if (!string.IsNullOrEmpty(Name) && Price > 0)
+            {
+                CoffeeServices.CreateCoffee(Name, Price);
+                Name = "";
+                Price = 0.0;
+                message = "New coffee successfully added.";
+                await Task.Delay(1500); // Wait for 1 second
+                ClearMessage();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in AddCoffeeAction: {ex.Message}");
+        }
+    }
+
+    private async Task AddInCoffeeFlavor()
+    {
+        try
+        {
+            if (!string.IsNullOrEmpty(Name) && Price > 0)
+            {
+                CoffeeAddInServices.CreateAddIn(Name, Price);
+                Name = "";
+                Price = 0.0;
+                message = "New coffee successfully added.";
+                await Task.Delay(1500); // Wait for 1 second
+                ClearMessage();
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in AddCoffeeAction: {ex.Message}");
+        }
+    }
+
+    private void ClearMessage()
+    {
+        message = "";
+    }
+}
+
+<style>
+    .container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .add-coffee-form {
+        margin-bottom: 20px;
+    }
+
+        .add-coffee-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .add-coffee-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th, .table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    .btn {
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>

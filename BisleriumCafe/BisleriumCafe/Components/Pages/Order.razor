@@ -2,61 +2,37 @@
 
 <div class="container">
     <h1>Order Coffee</h1>
-
     <div class="coffee-details">
         <label for="coffeeName">Coffee Name:</label>
         <input id="coffeeName" class="form-control" readonly value="@CoffeeName" />
 
         <label for="coffeePrice">Coffee Price:</label>
         <input id="coffeePrice" class="form-control price-input" readonly @bind="@ParseCoffeePrice" />
+        <br />
 
         <div class="add">
             <div class="add-in-input">
                 <label for="add">Add in flavors</label>
-                <select id="add-ins" class="form-control" onchange="updateTotalPrice()">
-                    <option value="cinnamon" data-price="0">Cinnamon - Rs 0.00</option>
-                    <option value="honey" data-price="1.0">Honey - Rs 1.00</option>
-                    <option value="ginger" data-price="1.5">Ginger - Rs 1.50</option>
-                    <option value="chocolate" data-price="1.5">Chocolate - Rs 1.50</option>
-                    <option value="ice-cream" data-price="1.5">Ice Cream - Rs 1.50</option>
-                    <!-- Add more cream options as needed --> 
-                </select>
-            </div>
-
-            <div class="add-in-input">
-                <select id="add-ins" class="form-control">
-                @foreach (var addIn in listOfAddIns)
-                {
-                   <option value="@addIn.AddName" data-price="@addIn.AddPrice">@($"{addIn.AddName} - Rs {addIn.AddPrice}")</option>
-                }
-                </select>
+                <div class="add-in-input">
+                    <select id="add-ins" class="form-control" @onchange="(args) => CalculateTotalCoffeePrice(args.Value.ToString())">
+                        @foreach (var addIn in listOfAddIns)
+                        {
+                            <option value="@addIn.AddPrice">@($"{addIn.AddName} - Rs {addIn.AddPrice}")</option>
+                        }
+                    </select>
+                </div>
             </div>
         </div>
 
         <label for="customerNumber">Customer Number:</label>
-        <input id="customerNumber" class="form-control" value="@CustomerNumber" />
+        <input id="customerNumber" class="form-control" value="@CustomerNumber" /><br />
 
-        <!-- Display the price -->
         <label for="sugar">Total Price:</label>
-        <div class="price-display">$@TotalCoffeePrice</div>
+        <div class="price-display">$@TotalCoffeePrice</div><br />
 
-        <button class="btn btn-primary" @onclick="() => orderConfirm()">Confirm</button>
+        <button class="btn btn-primary">Confirm</button>
     </div>
 </div>
-
-<script>
-    function updateTotalPrice() {
-        var selectedMilk = document.getElementById('milk').value;
-        var selectedSugar = document.getElementById('sugar').value;
-        var selectedCream = document.getElementById('cream').value;
-
-        var totalPrice = parseFloat(document.getElementById('milk').dataset.price) +
-            parseFloat(document.getElementById('sugar').dataset.price) +
-            parseFloat(document.getElementById('cream').dataset.price);
-
-        document.getElementById('totalPrice').textContent = '$' + totalPrice.toFixed(2);
-    }
-</script>
 
 @code {
     [Parameter]
@@ -67,7 +43,7 @@
 
     public int CustomerNumber { get; set; }
 
-    public double ParseCoffeePrice { get; set; } 
+    public double ParseCoffeePrice { get; set; }
 
     public double TotalCoffeePrice { get; set; }
 
@@ -85,37 +61,26 @@
             }
             else
             {
-                ParseCoffeePrice = 0; // Handle parsing error
+                ParseCoffeePrice = 0;
             }
-            TotalCoffeePrice = ParseCoffeePrice + 100;
+            // Initial calculation
+            TotalCoffeePrice = ParseCoffeePrice;
         }
         catch (Exception ex)
         {
+            listOfAddIns = new List<CoffeeAddIn>();
             Console.WriteLine($"Error in OnInitialized: {ex.Message}");
-            listOfAddIns = new List<CoffeeAddIn>(); // Initialize an empty list if an error occurs
         }
     }
 
-    private void CalculateTotalCoffeePrice()
+    private void CalculateTotalCoffeePrice(string selectedPrice)
     {
-        TotalCoffeePrice = ParseCoffeePrice + 100; // Initial price calculation
-
-        if (!string.IsNullOrEmpty(addInsModel.AddName) && listOfAddIns != null)
+        if (double.TryParse(selectedPrice, out double addInPrice))
         {
-            var selectedAddIn = listOfAddIns.FirstOrDefault(a => a.AddName == addInsModel.AddName);
-            if (selectedAddIn != null)
-            {
-                TotalCoffeePrice += selectedAddIn.AddPrice; // Add the selected add-in's price
-            }
+            TotalCoffeePrice = ParseCoffeePrice + addInPrice;
         }
-    }
-
-    public void orderConfirm(){
-        TotalCoffeePrice = ParseCoffeePrice + 100;
     }
 }
-
-
 
 
 <style>

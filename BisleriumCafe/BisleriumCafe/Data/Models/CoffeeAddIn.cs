@@ -9,6 +9,7 @@ namespace BisleriumCafe.Data.Models
 {
     public class CoffeeAddIn
     {
+        public Guid Id { get; set; } = new Guid();
         public string AddName { get; set; }
         public double AddPrice { get; set; }
     }
