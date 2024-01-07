@@ -12,11 +12,12 @@
         <label for="coffeePrice">Price:</label>
         <input id="coffeePrice" class="form-control" @bind="@Price" />
 
-        <button class="btn btn-primary" @onclick="AddCoffeeAction">Add Coffee</button>
-        <button class="btn btn-primary" @onclick="AddInCoffeeFlavor">Add In Flavor</button>
+        <button class="btn btn-primary" @onclick="AddNewCoffee">Add Coffee</button>
+        <button class="btn btn-primary" @onclick="AddInCoffeeFlavor">Add In Flavor</button><br />
         
         @if (!string.IsNullOrEmpty(message))
         {
+            <br />
             <div class="alert alert-success" role="alert">
                 @message
             </div>
@@ -30,24 +31,35 @@
     private double Price = 0.0;
     private string message = "";
 
-    private async Task AddCoffeeAction()
+    private async Task AddNewCoffee()
     {
         try
         {
             if (!string.IsNullOrEmpty(Name) && Price > 0)
             {
-                CoffeeServices.CreateCoffee(Name, Price);
-                Name = "";
-                Price = 0.0;
-                message = "New coffee successfully added.";
-                await Task.Delay(1500); // Wait for 1 second
-                ClearMessage();
+                var coffeeResponse = CoffeeServices.CreateCoffee(Name, Price);
+                if (coffeeResponse == "success")
+                {
+                    Name = "";
+                    Price = 0.0;
+                    message = "New coffee successfully added.";
+                }
+                else
+                {
+                    message = coffeeResponse;
+                }
+            }
+            else
+            {
+                message = "The Field is empty.";
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in AddCoffeeAction: {ex.Message}");
+            message = $"Error in AddCoffeeAction: {ex.Message}";
         }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
     }
 
     private async Task AddInCoffeeFlavor()
@@ -56,18 +68,26 @@
         {
             if (!string.IsNullOrEmpty(Name) && Price > 0)
             {
-                CoffeeAddInServices.CreateAddIn(Name, Price);
-                Name = "";
-                Price = 0.0;
-                message = "New coffee successfully added.";
-                await Task.Delay(1500); // Wait for 1 second
-                ClearMessage();
+                var addInResponse = CoffeeAddInServices.CoffeeAddInFlavor(Name, Price);
+                if (addInResponse == "success")
+                {
+                    Name = "";
+                    Price = 0.0;
+                    message = "Add-In new flavor successful.";                    
+                }
+                else
+                {
+                    message = addInResponse;
+                }
+                
             }
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Error in AddCoffeeAction: {ex.Message}");
         }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
     }
 
     private void ClearMessage()

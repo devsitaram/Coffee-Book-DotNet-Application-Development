@@ -4,15 +4,36 @@
 <div class="container">
     <h1>Add New Coffee</h1>
 
+    @if (IsUpdateCoffee)
+    {
     <div class="add-coffee-form">
-        <label for="coffeeName">Coffee Name:</label>
-        <input id="coffeeName" class="form-control" @bind="coffeeModel.CoffeeName" />
+        <label for="coffeeName">Coffee Name</label>
+        <input id="coffeeName" class="form-control" readonly @bind="coffeeModel.CoffeeName" />
 
-        <label for="coffeePrice">Coffee Price:</label>
+        <label for="coffeePrice">Coffee Price</label>
         <input id="coffeePrice" class="form-control" @bind="coffeeModel.CoffeePrice" />
 
-        <button class="btn btn-primary" @onclick="addCoffee">Add Coffee</button>
+            <button class="btn btn-primary" @onclick="UpdateCoffee">Save</button>
+            <button class="btn btn-primary" @onclick="UpdateCancel">Cancel</button>
     </div><br />
+    }
+
+    @if (IsUpdateFlavor)
+    {
+        <div class="add-coffee-form">
+            <label for="coffeeName">Coffee Flavor Name</label>
+            <input id="coffeeName" class="form-control" readonly @bind="flavorAddInModel.AddName" />
+
+            <label for="coffeePrice">Coffee Flavor Price</label>
+            <input id="coffeePrice" class="form-control" @bind="flavorAddInModel.AddPrice" />
+
+            <button class="btn btn-primary" @onclick="UpdateFlavor">Save</button>
+            <button class="btn btn-primary" @onclick="UpdateCancel">Cancel</button>
+        </div>
+
+        <br />
+    }
+
     @if (!string.IsNullOrEmpty(message))
     {
         <div class="alert alert-success" role="alert">
@@ -20,12 +41,13 @@
         </div>
     }
     <br />
+
+
     <div>
         <h3 for="coffeeName">Types of Coffee</h3>
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Id</th>
                     <th>Name</th>
                     <th>Price</th>
                     <th>Order</th>
@@ -43,13 +65,14 @@
                             <button class="btn btn-primary" @onclick="() => orderPage(coffee)">Order</button>
                         </td>
                         <td>
-                            <button class="btn btn-warning" @onclick="() => editCoffee(coffee)">Update</button>
+                            <button class="btn btn-warning" @onclick="() => getEditCoffee(coffee)">Update</button>
                         </td>
                         <td>
                             <button class="btn btn-danger" @onclick="() => deleteCoffee(coffee)">Delete</button>
                         </td>
                     </tr>
                 }
+
             </tbody>
         </table>
     </div><br />
@@ -72,7 +95,7 @@
                         <td>@flavor.AddName</td>
                         <td>@flavor.AddPrice</td>
                         <td>
-                            <button class="btn btn-warning" @onclick="() => editFlavor(flavor)">Update</button>
+                            <button class="btn btn-warning" @onclick="() => getEditAddInFlavor(flavor)">Update</button>
                         </td>
                         <td>
                             <button class="btn btn-danger" @onclick="() => deleteFlavor(flavor)">Delete</button>
@@ -81,18 +104,23 @@
                 }
             </tbody>
         </table>
-    </div>
+    </div><br />
 </div>
 
 @code {
     // No need to initialize here, as it's initialized in the OnInitialized method
-    public List<Coffee> listOfCoffee;
-    public Coffee coffeeModel = new Coffee();
-
-    public List<CoffeeAddIn> listOfLavor;
-    public CoffeeAddIn flavorModel = new();
-
+    private bool IsUpdateCoffee = false;
+    private bool IsUpdateFlavor = false;
     private string message = "";
+
+    // coffee model object
+    private List<Coffee> listOfCoffee;
+    private Coffee coffeeModel = new Coffee();
+
+    // add in flavor object
+    private List<CoffeeAddIn> listOfLavor;
+    private CoffeeAddIn flavorAddInModel = new();
+
     // Lifecycle method to initialize data
     protected override void OnInitialized()
     {
@@ -103,47 +131,61 @@
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in OnInitialized: {ex.Message}");
             listOfCoffee = new List<Coffee>();
             listOfLavor = new List<CoffeeAddIn>();
-            // Initialize an empty list if an error occurs
+            message = $"Error in OnInitialized: {ex.Message}";
+            ClearMessage();
         }
     }
 
     // Methods for handling coffee operations
-    private void addCoffee()
+    private void getEditCoffee(Coffee coffee)
     {
         try
         {
-            CoffeeServices.CreateCoffee(coffeeModel.CoffeeName, coffeeModel.CoffeePrice);
-            RefreshCoffeeList();
-            // Clear the input fields after adding coffee
-            coffeeModel.CoffeeName = "";
-            coffeeModel.CoffeePrice = 0;
-            message = "Aadd successfullly";
-            ClearMessage();
-
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"Error in addCoffee: {ex.Message}");
-        }
-    }
-
-    private void editCoffee(Coffee coffee)
-    {
-        try
-        {
+            IsUpdateFlavor = false;
+            IsUpdateCoffee = true;
             coffeeModel.CoffeeName = coffee.CoffeeName;
+            coffeeModel.CoffeePrice = coffee.CoffeePrice;
             StateHasChanged();
-
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in editCoffee: {ex.Message}");
+            message = $"Error in editCoffee: {ex.Message}";
         }
     }
 
+    private void UpdateCoffee()
+    {
+        try
+        {
+            IsUpdateCoffee = false;
+            var coffeeResponse = CoffeeServices.UpdateCoffee(coffeeModel.CoffeeName, coffeeModel.CoffeePrice);
+            if (coffeeResponse == "success")
+            {
+                RefreshCoffeeList();
+                coffeeModel.CoffeeName = "";
+                coffeeModel.CoffeePrice = 0;
+                message = $"{coffeeModel.CoffeeName} Coffee's price uspdate successfuly";
+            }
+            else
+            {
+                message = coffeeResponse;
+            }
+        }
+        catch (Exception ex)
+        {
+            message = $"Error in addCoffee: {ex.Message}";
+        }
+        ClearMessage();
+    }
+
+    // update cancel
+    private void UpdateCancel(){
+        IsUpdateCoffee = false;
+    }
+    
+    // delete coffee
     private void deleteCoffee(Coffee coffee)
     {
         try
@@ -153,7 +195,7 @@
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in delete coffee: {ex.Message}");
+            message = $"Error in delete coffee: {ex.Message}";
         }
     }
 
@@ -166,40 +208,49 @@
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in RefreshCoffeeList: {ex.Message}");
+            message = $"Error in RefreshCoffeeList: {ex.Message}";
         }
-    }
-
-    // // navigate the order page
-    private void orderPage(Coffee coffee)
-    {
-        if (coffee != null)
-        {
-            // Encode the coffee name and price to pass them through the URL
-            string encodedCoffeeName = Uri.EscapeDataString(coffee.CoffeeName);
-            string encodedCoffeePrice = Uri.EscapeDataString(coffee.CoffeePrice.ToString()); // Convert price to string
-
-            // Navigate to the order page with coffee name and price in the URL
-            NavManager.NavigateTo($"/order/{encodedCoffeeName}/{encodedCoffeePrice}");
-        }
+        ClearMessage();
     }
 
 
     @* 
      this is the flavor transaction
     *@
-    private void editFlavor(CoffeeAddIn flavor)
+    private void getEditAddInFlavor(CoffeeAddIn addInFlavor)
     {
         try
         {
-            flavorModel.AddName = flavor.AddName;
-            flavorModel.AddPrice = flavor.AddPrice;
+            IsUpdateCoffee = false;
+            IsUpdateFlavor = true;
+            flavorAddInModel.AddName = addInFlavor.AddName;
+            flavorAddInModel.AddPrice = addInFlavor.AddPrice;
             StateHasChanged();
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in edit flavor: {ex.Message}");
+            message = $"Error in editCoffee: {ex.Message}";
         }
+        ClearMessage();
+    }
+
+    private void UpdateFlavor()
+    {
+        IsUpdateFlavor = false;
+        var response = CoffeeAddInServices.UpdateAddInFlavor(flavorAddInModel.AddName, flavorAddInModel.AddPrice);
+        if (response == null)
+        {
+            RefreshCoffeeAddIn();
+            flavorAddInModel.AddName = "";
+            flavorAddInModel.AddPrice = 0;
+            message = $"{coffeeModel.CoffeeName} flavor's price uspdate successfuly";
+        } 
+        else 
+        {
+            message = response;
+        }
+
+        ClearMessage();
     }
 
     private void deleteFlavor(CoffeeAddIn flavor)
@@ -208,11 +259,13 @@
         {
             CoffeeAddInServices.DeleteAddIn(flavor.AddName);
             RefreshCoffeeAddIn();
+            message = $"{flavor.AddName} flavor is deleted.";
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in delete add-in flavor: {ex.Message}");
+            message = $"Error in delete add-in flavor: {ex.Message}";
         }
+        ClearMessage();
     }
 
     private void RefreshCoffeeAddIn()
@@ -220,18 +273,31 @@
         try
         {
             listOfLavor = CoffeeAddInServices.GetAllAddIn();
-            ClearMessage();
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in RefreshCoffeeAddIn: {ex.Message}");
+            message = $"Error in RefreshCoffeeAddIn: {ex.Message}";
         }
+        ClearMessage();
     }
 
     private async void ClearMessage()
     {
         await Task.Delay(1000); // Wait for 1 second
         message = "";
+    }
+
+    // navigate the order page
+    private void orderPage(Coffee coffee)
+    {
+        if (coffee != null)
+        {
+            // Encode the coffee name and price to pass them through the URL
+            string encodedCoffeeName = Uri.EscapeDataString(coffee.CoffeeName);
+            string encodedCoffeePrice = Uri.EscapeDataString(coffee.CoffeePrice.ToString()); // Convert price to string
+           // Navigate to the order page with coffee name and price in the URL
+            NavManager.NavigateTo($"/order/{encodedCoffeeName}/{encodedCoffeePrice}");
+        }
     }
 }
 

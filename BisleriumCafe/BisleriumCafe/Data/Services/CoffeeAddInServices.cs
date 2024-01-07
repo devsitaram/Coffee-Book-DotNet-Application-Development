@@ -22,7 +22,7 @@ namespace BisleriumCafe.Data.Services
             return new List<CoffeeAddIn>();
         }
 
-        public static List<CoffeeAddIn> CreateAddIn(string name, double price)
+        public static string CoffeeAddInFlavor(string name, double price)
         {
             try
             {
@@ -31,8 +31,8 @@ namespace BisleriumCafe.Data.Services
 
                 if (addInExists)
                 {
-                    throw new Exception("Username already exists.");
-                } 
+                    return "Flavor already exists.";
+                }
                 else
                 {
                     addIns.Add(
@@ -42,21 +42,46 @@ namespace BisleriumCafe.Data.Services
                         AddPrice = price
                     });
                     SaveAllAddIn(addIns);
-                    return addIns;
+                    return "success";
                 }
             } catch(Exception ex)
             {
-                throw new Exception("Username already exists.");
+                return $"Enter the valid data {ex}";
+            }
+        }
+
+        public static string UpdateAddInFlavor(string addName, double addPrice)
+        {
+            try
+            {
+                List<CoffeeAddIn> listOfAddIn = GetAllAddIn();
+                CoffeeAddIn existingAddInCoffee = listOfAddIn.FirstOrDefault(x => x.AddName == addName);
+
+                if (existingAddInCoffee != null)
+                {
+                    // Coffee flavor exists, update its name and price
+                    existingAddInCoffee.AddPrice = addPrice;
+                    SaveAllAddIn(listOfAddIn); 
+                    return "Add-In coffee flavor updated successfully.";
+                }
+                else
+                {
+                    return "The flavor does not exist.";
+                }
+            }
+            catch (Exception ex)
+            {
+                return $"Enter valid data: {ex.Message}"; // Return an error message or handle differently based on requirements
             }
         }
 
         public static void SeedAddIns()
         {
-                CreateAddIn("Cinnamon", 25.00);
-                CreateAddIn("Honey", 30.00);
-                CreateAddIn("Ginger", 45.00);
-                CreateAddIn("Chocolate", 20.00);
-                CreateAddIn("Ice Cream", 35.00);
+                //CreateAddIn("Cinnamon", 25.00);
+                //CreateAddIn("Honey", 30.00);
+                //CreateAddIn("Ginger", 45.00);
+                //CreateAddIn("Chocolate", 20.00);
+                //CreateAddIn("Ice Cream", 35.00);
         }
 
         public static void SaveAllAddIn(List<CoffeeAddIn> addIns)
