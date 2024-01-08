@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using BisleriumCafe.Data.Models;
+using Microsoft.Extensions.Logging;
 using QuestPDF.Infrastructure;
 
 namespace BisleriumCafe
@@ -16,6 +17,7 @@ namespace BisleriumCafe
                 });
 
             builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddSingleton<GlobalState>();
             QuestPDF.Settings.License = LicenseType.Community;
 
 #if DEBUG

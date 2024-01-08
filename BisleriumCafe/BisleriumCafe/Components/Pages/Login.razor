@@ -3,76 +3,75 @@
 @layout EmptyLayout
 
 <body>
-    <div class="login-container d-flex align-items-center justify-content-center vh-100">
-        <div class="card shadow-lg p-3 mb-5 bg-white rounded">
-            <div class="card-body">
-                <h1 class="card-title text-center mb-5">Bislerium Coffee Station</h1>
+    <form class="row g-3" @onsubmit="LoginHandler">
+        <div class="login-container d-flex align-items-center justify-content-center vh-100">
+            <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <h1 class="card-title text-center mb-5">Bislerium Coffee Station</h1>
+                    <div class="form-group">
+                        <label class="form-label">Role</label>
+                        <select class="form-control" id="roleSelect" @bind="_role">
+                            @foreach (var enumValue in Enum.GetValues(typeof(BisleriumCafe.Data.Enums.Role)))
+                            {
+                                <option value="@enumValue">@enumValue</option>
+                            }
+                        </select ><br />
 
-                <div class="form-group">
-                    <label class="form-label">Role</label>
-                    <select class="form-control" id="roleSelect" bind="@role">
-                        @foreach (var enumValue in Enum.GetValues(typeof(BisleriumCafe.Data.Enums.Role)))
-                        {
-                            <option value="@enumValue">@enumValue</option>
-                        }
-                    </select ><br />
-
-                    <label class="form-label">Password</label>
-                    <input class="form-control" bind="@password" /> <br />
+                        <label class="form-label">Password</label>
+                        <input class="form-control" @bind="_password" /> <br />
                     
-                    <div class="sidebar">
-                        <button class="btn btn-primary btn-lg align-content-center" onclick="@loginHandler">Log In</button>
+                        <div class="sidebar">
+                            <button type="submit" class="btn btn-primary btn-lg align-content-center" onclick="@LoginHandler">Log In</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 
 @code {
     [CascadingParameter]
-    private GlobalState globalState { get; set; }
-    private bool showDefaultCredentials { get; set; }
-    private Role role { get; set; }
-    private string password { get; set; }
-    private string errorMessage = "";
+    private GlobalState _globalState { get; set; } = new GlobalState();
+    private bool _showDefaultCredentials { get; set; }
+    private Role _role { get; set; }
+    private string _password { get; set; }
+    private string _errorMessage = "";
 
-    private void loginHandler()
+    protected override void OnInitialized()
     {
-        // NavManager.NavigateTo("/home");
         try
         {
-            errorMessage = "";
-            globalState.CurrentUser = UserServices.Login(role, password);
-            if (globalState.CurrentUser != null)
+            var user = UserServices.Login(Role.Admin, UserServices.Password);
+            _showDefaultCredentials = user.HasInitialPassword;
+        }
+        catch 
+        { 
+
+        }
+        _globalState.CurrentUser = null;
+        _errorMessage = "";
+    }
+
+    private void LoginHandler()
+    {
+        try
+        {
+            _errorMessage = "";
+            User user;
+            _globalState.CurrentUser = UserServices.Login(_role, _password);
+            Console.WriteLine("user does not exists");
+            NavManager.NavigateTo(_globalState.CurrentUser.HasInitialPassword ? "/change-password" : "/");
+
+            if (_globalState.CurrentUser != null)
             {
-                NavManager.NavigateTo(globalState.CurrentUser.HasInitialPassword ? "/" : "/login");
+                Console.WriteLine("user exists");
             }
         }
         catch (Exception e)
         {
-            errorMessage = e.Message;
+            _errorMessage = e.Message;
             Console.WriteLine(e);
         }
     }
-
-
-    // private void loginHandler()
-    // {        
-    //     try
-    //     {
-    //         globalState.CurrentUser = UserServices.Login(role, password);
-    //         if (globalState.CurrentUser != null)
-    //         {
-    //             NavManager.NavigateTo(globalState.CurrentUser.HasInitialPassword ? "/weather" : "/");
-    //         } else {
-    //             errorMessage = "Invalid user";
-    //         }
-    //     }
-    //     catch (Exception e)
-    //     {
-    //         errorMessage = e.Message;
-    //         Console.WriteLine(e);
-    //     }
-    // }
 }

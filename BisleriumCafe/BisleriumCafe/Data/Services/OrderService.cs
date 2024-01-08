@@ -54,7 +54,6 @@ namespace BisleriumCafe.Data.Services
         }
 
         private List<CoffeesOrder> orders = new List<CoffeesOrder>();
-
         public async Task PlaceOrder(CoffeesOrder order)
         {
             // Simulate asynchronous database operation to save the order

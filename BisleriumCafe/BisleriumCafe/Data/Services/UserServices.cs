@@ -11,8 +11,8 @@ namespace BisleriumCafe.Data.Services
 {
     public class UserServices
     {
-        public const Role SeedRole = Role.Admin;
-        public const string SeedPassword = "Admin";
+        public const Role LoginRole = Role.Admin;
+        public const string Password = "Admin";
 
         public static List<User> GetAllUser()
         {
@@ -23,7 +23,6 @@ namespace BisleriumCafe.Data.Services
             }
 
             var json = File.ReadAllText(appUsersFilePath);
-
             return JsonSerializer.Deserialize<List<User>>(json);
         }
 
@@ -60,32 +59,9 @@ namespace BisleriumCafe.Data.Services
             }
         }
 
-        public static User GetById(Guid id)
-        {
-            List<User> users = GetAllUser();
-            return users.FirstOrDefault(x => x.Id == id);
-        }
-
-
-        // delete user
-        public static List<User> DeleteUser(Guid id)
-        {
-            List<User> users = GetAllUser();
-            User user = users.FirstOrDefault(x => x.Id == id);
-
-            if (user == null)
-            {
-                throw new Exception("User not found.");
-            }
-
-            users.Remove(user);
-            SaveAll(users);
-            return users;
-        }
-
         public static User Login(Role role, string password)
         {
-            var loginErrorMessage = "Invalid rolr or password.";
+            var loginErrorMessage = "Invalid role or password.";
             List<User> users = GetAllUser();
             User user = users.FirstOrDefault(x => x.Role == role);
             if (user == null)
@@ -100,7 +76,6 @@ namespace BisleriumCafe.Data.Services
             {
                 throw new Exception(loginErrorMessage);
             }
-
             return user;
         }
 

@@ -1,15 +1,10 @@
 ﻿@inherits LayoutComponentBase
-@* @inject NavigationManager NavManager
-@code {
-    protected override void OnInitialized() =>
-    NavManager.NavigateTo("/login");
-}  *@
+@inject NavigationManager NavManager
 
 <div class="page">
     <div class="sidebar">
         <NavMenu />
     </div>
-
     <main>
         <article class="content px-4">
             @Body
@@ -17,13 +12,9 @@
     </main>
 </div>
 
-@* @code {
+@code {
     protected override void OnInitialized()
     {
-        CoffeeAddInServices.SeedAddIns();
-        // UserServices.SeedUsers();
-        // CoffeeServices.SeedCoffee();
-        // PDFServices.PDFGenerate();
-
+        UserServices.SeedUsers();
     }
-} *@
+}

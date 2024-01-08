@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-07T19:51:28.608</Modified>
+      <Modified>2024-01-08T15:29:20.672</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-07T19:51:28.464</Modified>
+      <Modified>2024-01-08T15:29:20.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.runtimeconfig.json">
       <PackagePath>BisleriumCafe.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.dll">
       <PackagePath>BisleriumCafe.dll</PackagePath>
-      <Modified>2024-01-07T19:51:28.262</Modified>
+      <Modified>2024-01-08T14:53:55.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BisleriumCafe.exe</PackagePath>
-      <Modified>2024-01-07T19:51:28.269</Modified>
+      <Modified>2024-01-08T14:53:55.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
