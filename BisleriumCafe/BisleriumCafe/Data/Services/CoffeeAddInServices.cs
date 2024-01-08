@@ -77,11 +77,12 @@ namespace BisleriumCafe.Data.Services
 
         public static void SeedAddIns()
         {
-                //CreateAddIn("Cinnamon", 25.00);
-                //CreateAddIn("Honey", 30.00);
-                //CreateAddIn("Ginger", 45.00);
-                //CreateAddIn("Chocolate", 20.00);
-                //CreateAddIn("Ice Cream", 35.00);
+            //CreateAddIn("No Flavor", 0.0);
+            //CreateAddIn("Cinnamon", 25.00);
+            //CreateAddIn("Honey", 30.00);
+            //CreateAddIn("Ginger", 45.00);
+            //CreateAddIn("Chocolate", 20.00);
+            //CreateAddIn("Ice Cream", 35.00);
         }
 
         public static void SaveAllAddIn(List<CoffeeAddIn> addIns)

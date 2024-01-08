@@ -91,16 +91,19 @@
             <tbody>
                 @foreach (var flavor in listOfLavor)
                 {
-                    <tr>
-                        <td>@flavor.AddName</td>
-                        <td>@flavor.AddPrice</td>
-                        <td>
-                            <button class="btn btn-warning" @onclick="() => getEditAddInFlavor(flavor)">Update</button>
-                        </td>
-                        <td>
-                            <button class="btn btn-danger" @onclick="() => deleteFlavor(flavor)">Delete</button>
-                        </td>
-                    </tr>
+                    @if (flavor.AddPrice > 0)
+                    {
+                        <tr>
+                            <td>@flavor.AddName</td>
+                            <td>@flavor.AddPrice</td>
+                            <td>
+                                <button class="btn btn-warning" @onclick="() => getEditAddInFlavor(flavor)">Update</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-danger" @onclick="() => deleteFlavor(flavor)">Delete</button>
+                            </td>
+                        </tr>
+                    }
                 }
             </tbody>
         </table>

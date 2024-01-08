@@ -10,18 +10,18 @@
                     <h1 class="card-title text-center mb-5">Bislerium Coffee Station</h1>
                     <div class="form-group">
                         <label class="form-label">Role</label>
-                        <select class="form-control" id="roleSelect" @bind="_role">
-                            @foreach (var enumValue in Enum.GetValues(typeof(BisleriumCafe.Data.Enums.Role)))
+                        <select class="form-control" id="roleSelect" @bind="role">
+                            @foreach (var roles in Enum.GetValues(typeof(BisleriumCafe.Data.Enums.Role)))
                             {
-                                <option value="@enumValue">@enumValue</option>
+                                <option value="@roles">@roles</option>
                             }
                         </select ><br />
 
                         <label class="form-label">Password</label>
-                        <input class="form-control" @bind="_password" /> <br />
+                        <input class="form-control" @bind="password" /> <br />
                     
-                        <div class="sidebar">
-                            <button type="submit" class="btn btn-primary btn-lg align-content-center" onclick="@LoginHandler">Log In</button>
+                        <div class="sidebar align-content-center">
+                            <button type="submit" class="btn btn-primary btn-lg btn-lg w-100" onclick="@LoginHandler">Log In</button>
                         </div>
                     </div>
                 </div>
@@ -32,46 +32,46 @@
 
 @code {
     [CascadingParameter]
-    private GlobalState _globalState { get; set; } = new GlobalState();
-    private bool _showDefaultCredentials { get; set; }
-    private Role _role { get; set; }
-    private string _password { get; set; }
-    private string _errorMessage = "";
+    private GlobalState globalState { get; set; } = new GlobalState();
+    private bool showDefaultCredentials { get; set; }
+    private Role role { get; set; }
+    private string password { get; set; }
+    private string errorMessage = "";
 
     protected override void OnInitialized()
     {
         try
         {
-            var user = UserServices.Login(Role.Admin, UserServices.Password);
-            _showDefaultCredentials = user.HasInitialPassword;
+            password = UserServices.Password;
+            role = Role.Admin;
+            var user = UserServices.Login(role, password);
+            showDefaultCredentials = user.HasInitialPassword;
         }
-        catch 
+        catch
         { 
-
+            errorMessage = "User is not available!";
         }
-        _globalState.CurrentUser = null;
-        _errorMessage = "";
+        globalState.CurrentUser = null;
+        errorMessage = "";
     }
 
     private void LoginHandler()
     {
         try
         {
-            _errorMessage = "";
+            errorMessage = "";
             User user;
-            _globalState.CurrentUser = UserServices.Login(_role, _password);
-            Console.WriteLine("user does not exists");
-            NavManager.NavigateTo(_globalState.CurrentUser.HasInitialPassword ? "/change-password" : "/");
+            globalState.CurrentUser = UserServices.Login(role, password);
+            NavManager.NavigateTo(globalState.CurrentUser.HasInitialPassword ? "/change-password" : "/");
 
-            if (_globalState.CurrentUser != null)
+            if (globalState.CurrentUser != null)
             {
-                Console.WriteLine("user exists");
+                errorMessage = "user exists";
             }
         }
         catch (Exception e)
         {
-            _errorMessage = e.Message;
-            Console.WriteLine(e);
+            errorMessage = e.Message;
         }
     }
 }

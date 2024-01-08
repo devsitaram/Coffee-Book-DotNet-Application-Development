@@ -1,38 +1,50 @@
 ﻿@page "/order/{CoffeeName}/{CoffeePrice}"
 
-<div class="container">
-    <h1>Order Coffee</h1>
-    <div class="coffee-details">
-        <label for="coffeeName">Coffee Name:</label>
-        <input id="coffeeName" class="form-control" readonly value="@CoffeeName" />
+<body>
+    <form class="row g-3" @onsubmit="CoffeeOrder">
+        <div class="container">
+            <h1>Order Coffee</h1>
+            <div class="coffee-details">
 
-        <label for="coffeePrice">Coffee Price:</label>
-        <input id="coffeePrice" class="form-control price-input" readonly @bind="@ParseCoffeePrice" />
-        <br />
+                <label for="coffeeName">Coffee Name:</label>
+                <input id="coffeeName" class="form-control" readonly value="@CoffeeName" />
 
-        <div class="add">
-            <div class="add-in-input">
-                <label for="add">Add in flavors</label>
-                <div class="add-in-input">
-                    <select id="add-ins" class="form-control" @onchange="(args) => CalculateTotalCoffeePrice(args.Value.ToString())">
-                        @foreach (var addIn in listOfAddIns)
-                        {
-                            <option value="@addIn.AddPrice">@($"{addIn.AddName} - Rs {addIn.AddPrice}")</option>
-                        }
-                    </select>
+                <label for="coffeePrice">Coffee Price:</label>
+                <input id="coffeePrice" class="form-control price-input" readonly @bind="@ParseCoffeePrice" />
+                <br />
+
+                <div class="add">
+                    <div class="add-in-input">
+                        <label for="add">Add in flavors</label>
+                        <div class="add-in-input">
+                            <select id="add-ins" class="form-control"  @onchange="(args) => CalculateTotalCoffeePrice(args.Value.ToString())">
+                                @foreach (var addIn in listOfAddIns)
+                                {
+                                    <option value="@addIn.AddPrice">@($"{addIn.AddName} - Rs {addIn.AddPrice}")</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <label for="customerNumber">Customer Number:</label>
+                <input id="customerNumber" class="form-control" value="@CustomerNumber" /><br />
+
+                <label for="sugar">Total Price:</label>
+                <div class="price-display">Rs.@TotalPrice</div><br />
+
+                <button class="btn btn-primary" type="submit">Confirm</button>
+
+            </div><br />
+            @if (!string.IsNullOrEmpty(message))
+            {
+                <div class="alert alert-success" role="alert">
+                    @message
+                </div>
+            }
         </div>
-
-        <label for="customerNumber">Customer Number:</label>
-        <input id="customerNumber" class="form-control" value="@CustomerNumber" /><br />
-
-        <label for="sugar">Total Price:</label>
-        <div class="price-display">$@TotalCoffeePrice</div><br />
-
-        <button class="btn btn-primary">Confirm</button>
-    </div>
-</div>
+    </form>
+</body>
 
 @code {
     [Parameter]
@@ -45,10 +57,13 @@
 
     public double ParseCoffeePrice { get; set; }
 
-    public double TotalCoffeePrice { get; set; }
+    public double TotalPrice { get; set; }
 
     private List<CoffeeAddIn> listOfAddIns;
+
     private CoffeeAddIn addInsModel = new();
+
+    private string message = "";
 
     protected override void OnInitialized()
     {
@@ -64,7 +79,7 @@
                 ParseCoffeePrice = 0;
             }
             // Initial calculation
-            TotalCoffeePrice = ParseCoffeePrice;
+            TotalPrice = ParseCoffeePrice;
         }
         catch (Exception ex)
         {
@@ -77,8 +92,21 @@
     {
         if (double.TryParse(selectedPrice, out double addInPrice))
         {
-            TotalCoffeePrice = ParseCoffeePrice + addInPrice;
+            TotalPrice = ParseCoffeePrice + addInPrice;
         }
+    }
+
+    private void CoffeeOrder()
+    {
+        // var response = OrderService.CreateOrder(CoffeeName, CoffeePrice, AddFlavorName, AddFlavorPrice, CustomerPhoneNumber, TotalPrice)
+        // if (response == "success")
+        // {
+        //     message = $"{CoffeeName} order successfully";
+        // }
+        // else
+        // {
+        //     message = response;
+        // }
     }
 }
 

@@ -79,31 +79,36 @@ namespace BisleriumCafe.Data.Services
             return user;
         }
 
-        public static User ChangePassword(Guid id, string currentPassword, string newPassword)
+        public static string ChangePassword(Role role, string newPassword, string confirmPassword)
         {
-            if (currentPassword == newPassword)
+            try
             {
-                throw new Exception("New password must be different from current password.");
+                if (newPassword != confirmPassword)
+                {
+                    return "New password and confirm password do not match!";
+                }
+                else
+                {
+                    List<User> users = GetAllUser();
+                    // Find the user based on the specified role
+                    User existingPassword = users.FirstOrDefault(x => x.Role == role);
+                    if (existingPassword == null)
+                    {
+                        return "Invalid user role!";
+                    }
+                    else
+                    {
+                        // Proceed to change the password
+                        existingPassword.PasswordHash = Utils.HashSecret(newPassword); // Hash the new password
+                        SaveAll(users);
+                        return "success";
+                    }
+                }
             }
-
-            List<User> users = GetAllUser();
-            User user = users.FirstOrDefault(x => x.Id == id);
-
-            if (user == null)
+            catch (Exception e)
             {
-                throw new Exception("User not found.");
+                return e.Message;
             }
-
-            bool passwordIsValid = Utils.VerifyHash(currentPassword, user.PasswordHash);
-
-            if (!passwordIsValid)
-            {
-                throw new Exception("Incorrect current password.");
-            }
-
-            user.PasswordHash = Utils.HashSecret(newPassword);
-            SaveAll(users);
-            return user;
         }
 
         // save user in app directory path
