@@ -1,25 +1,50 @@
 ﻿@page "/revenue"
 
-<div class="container">
-    <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%">
-        
-        <button type="submit" class="btn btn-primary">Log In</button>
-        <div class="add-in-input">
-            <div class="dropdown">
-                <button class="dropbtn btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Export By</button>
-                <div class="dropdown-content">
-                    <button @onclick="PDFGenerate">PDF</button>
-                    <button @onclick="CSVGenerate">CSV</button>
-                    <button @onclick="JSONGenerate">JSON</button>
-                    <button @onclick="ExcelGenerate">EXCEL</button>
+<div class="container" style="display: flex; flex-direction: column; width: 100%">
+
+    <h2 style="display: flex; justify-content: space-between:center">Bislerium Cafe Sales History</h2>
+    <br />
+    <div style="display: flex; justify-content: space-between">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dropdown">
+                        <button class="dropbtn btn dropdown-toggle" style="background-color:rebeccapurple" data-bs-toggle="dropdown">Sorting By</button>
+                        <div class="dropdown-content">
+                            <button type="submit" @onclick='() => SortColumn("Name")'>Coffee Name</button>
+                            <button type="submit" @onclick='() => SortColumn("Price")'>Coffee Price</button>
+                            <button type="submit" @onclick='() => SortColumn("Total")'>Total Price</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="dropdown">
+                        <button class="dropbtn btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Export By</button>
+                        <div class="dropdown-content">
+                            <button @onclick="PDFGenerate">PDF</button>
+                            <button @onclick="CSVGenerate">CSV</button>
+                            <button @onclick="JSONGenerate">JSON</button>
+                            <button @onclick="ExcelGenerate">EXCEL</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <input @bind="searchTerm" class="form-control mb-6" type="search" placeholder="Search by name" aria-label="Search">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-outline-success mb-2" @onclick="Search">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
    
     @if (!string.IsNullOrEmpty(successMessage))
     {
-        <br />
         <div class="alert alert-success" role="alert">
             @successMessage
         </div>
@@ -27,14 +52,13 @@
 
     @if (!string.IsNullOrEmpty(errorMessage))
     {
-        <br />
         <div class="alert alert-success" role="alert">
             @errorMessage
         </div>
     }
 
-    <div>
-        <h3 for="coffeeName">Sale History</h3>
+    <div><br />
+        <h3 for="coffeeName">Sales Transactions</h3>
         <table class="table table-bordered">
             <thead>
                 <tr>
@@ -48,18 +72,37 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var orderCoffee in listOfCoffeeOrder)
+                @if (!string.IsNullOrEmpty(searchTerm))
                 {
-                    <tr>
-                        <td>@orderCoffee.CoffeeName</td>
-                        <td>@orderCoffee.CoffeePrice</td>
-                        <td>@orderCoffee.AddFlavorName</td>
-                        <td>@orderCoffee.AddFlavorPrice</td>
-                        <td>@orderCoffee.CustomerPhoneNumber</td>
-                        <td>@orderCoffee.TotalPrice</td>
-                        <td>@orderCoffee.OrderDate</td>
-                    </tr>
+                    @foreach (var orderCoffee in filteredCoffeeOrders)
+                    {
+                        <tr>
+                            <td>@orderCoffee.CoffeeName</td>
+                            <td>@orderCoffee.CoffeePrice</td>
+                            <td>@orderCoffee.AddFlavorName</td>
+                            <td>@orderCoffee.AddFlavorPrice</td>
+                            <td>@orderCoffee.CustomerPhoneNumber</td>
+                            <td>@orderCoffee.TotalPrice</td>
+                            <td>@orderCoffee.OrderDate</td>
+                        </tr>
+                    }
                 }
+                else
+                {
+                    @foreach (var orderCoffee in listOfCoffeeOrder)
+                    {
+                        <tr>
+                            <td>@orderCoffee.CoffeeName</td>
+                            <td>@orderCoffee.CoffeePrice</td>
+                            <td>@orderCoffee.AddFlavorName</td>
+                            <td>@orderCoffee.AddFlavorPrice</td>
+                            <td>@orderCoffee.CustomerPhoneNumber</td>
+                            <td>@orderCoffee.TotalPrice</td>
+                            <td>@orderCoffee.OrderDate</td>
+                        </tr>
+                    }
+                }
+                
             </tbody>
         </table>
     </div>
@@ -71,15 +114,26 @@
     private string successMessage = "";
     private string errorMessage = "";
 
+    // sorting functions
+    private string sortedColumn = "";
+    private bool sortAsc = true;
+
+    // New property for search term
+    private string searchTerm = "";
+    private List<CoffeeOrder> filteredCoffeeOrders;
+
     protected override void OnInitialized()
     {
         try
         {
             listOfCoffeeOrder = OrderService.GetAllOrders();
+            // Initialize filteredCoffeeOrders with all data initially
+            filteredCoffeeOrders = new List<CoffeeOrder>(listOfCoffeeOrder);
         }
         catch
         {
             listOfCoffeeOrder = new List<CoffeeOrder>();
+            filteredCoffeeOrders = new List<CoffeeOrder>();
         }
     }
 
@@ -148,6 +202,66 @@
         successMessage = "";
         errorMessage = "";
     }
+
+    private void SortColumn(string columnName)
+    {
+        if (sortedColumn == columnName)
+        {
+            sortAsc = !sortAsc;
+        }
+        else
+        {
+            sortAsc = true;
+            sortedColumn = columnName;
+        }
+
+        switch (columnName)
+        {
+            case "Name":
+                if (sortAsc)
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderBy(x => x.CoffeeName).ToList();
+                else
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderByDescending(x => x.CoffeeName).ToList();
+                break;
+
+            case "Price":
+                if (sortAsc)
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderBy(x => x.CoffeePrice).ToList();
+                else
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderByDescending(x => x.CoffeePrice).ToList();
+                break;
+
+            case "Total":
+                if (sortAsc)
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderBy(x => x.TotalPrice).ToList();
+                else
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderByDescending(x => x.TotalPrice).ToList();
+                break;
+
+            // Add cases for other columns if needed
+            default:
+                break;
+        }
+
+        // Trigger UI update after sorting
+        StateHasChanged();
+    }
+
+    // order history search by coffee name search
+    private void Search()
+    {
+        if (!string.IsNullOrWhiteSpace(searchTerm))
+        {
+            // Filter the list based on the search term
+            filteredCoffeeOrders = listOfCoffeeOrder
+                .Where(order => order.CoffeeName.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+        else
+        {
+            // If search term is empty, display all data
+            filteredCoffeeOrders = new List<CoffeeOrder>(listOfCoffeeOrder);
+        }
+    }
 }
 
 <style>
@@ -202,7 +316,7 @@
         display: none;
         position: absolute;
         background-color: #FFFFFF;
-        min-width: 160px;
+        min-width: 100px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         border-radius: 8px;

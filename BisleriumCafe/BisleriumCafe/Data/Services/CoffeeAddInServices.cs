@@ -31,7 +31,7 @@ namespace BisleriumCafe.Data.Services
 
                 if (addInExists)
                 {
-                    return "Flavor already exists.";
+                    return "Add in flavor is already exists.";
                 }
                 else
                 {

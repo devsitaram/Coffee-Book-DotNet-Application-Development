@@ -10,16 +10,23 @@
         <input id="coffeeName" class="form-control" @bind="@Name" />
 
         <label for="coffeePrice">Price:</label>
-        <input id="coffeePrice" class="form-control" @bind="@Price" />
+        <input id="coffeePrice" class="form-control" @bind="@Price" /><br />
 
         <button class="btn btn-primary" @onclick="AddNewCoffee">Add Coffee</button>
         <button class="btn btn-primary" @onclick="AddInCoffeeFlavor">Add In Flavor</button><br />
         
-        @if (!string.IsNullOrEmpty(message))
+        @if (!string.IsNullOrEmpty(successMessage))
         {
             <br />
             <div class="alert alert-success" role="alert">
-                @message
+                @successMessage
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <br />
+            <div class="alert alert-success" role="alert">
+                @errorMessage
             </div>
         }
     </div>
@@ -29,7 +36,8 @@
 @code {
     private string Name = "";
     private double Price = 0.0;
-    private string message = "";
+    private string successMessage = "";
+    private string errorMessage = "";
 
     private async Task AddNewCoffee()
     {
@@ -42,21 +50,21 @@
                 {
                     Name = "";
                     Price = 0.0;
-                    message = "New coffee successfully added.";
+                    successMessage = "New coffee successfully added.";
                 }
                 else
                 {
-                    message = coffeeResponse;
+                    errorMessage = coffeeResponse;
                 }
             }
             else
             {
-                message = "The Field is empty.";
+                errorMessage = "The Field is empty.";
             }
         }
         catch (Exception ex)
         {
-            message = $"Error in AddCoffeeAction: {ex.Message}";
+            errorMessage = $"Error in AddCoffeeAction: {ex.Message}";
         }
         await Task.Delay(1500); // Wait for 1 second
         ClearMessage();
@@ -73,18 +81,18 @@
                 {
                     Name = "";
                     Price = 0.0;
-                    message = "Add-In new flavor successful.";                    
+                    successMessage = "Add-In new flavor successful.";
                 }
                 else
                 {
-                    message = addInResponse;
+                    errorMessage = addInResponse;
                 }
-                
+
             }
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error in AddCoffeeAction: {ex.Message}");
+            errorMessage = $"Error in AddCoffeeAction: {ex.Message}";
         }
         await Task.Delay(1500); // Wait for 1 second
         ClearMessage();
@@ -92,7 +100,8 @@
 
     private void ClearMessage()
     {
-        message = "";
+        successMessage = "";
+        errorMessage = "";
     }
 }
 

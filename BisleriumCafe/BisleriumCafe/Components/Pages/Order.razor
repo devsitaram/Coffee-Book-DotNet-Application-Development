@@ -31,25 +31,22 @@
                     <label for="customerNumber">Customer Number:</label>
                     <input id="customerNumber" class="form-control" @bind="CustomerNumber"/><br />
 
-                    <label for="sugar">You get 15% Discount after 15 days</label>
-                    <button class="btn btn-primary" @onclick="GetDiscountForCustomer">Discount verify</button><br />
+                    <label for="sugar">Get 15% discount after 15 days</label>
 
                     @if (ShowDiscount)
                     {
-
                         <label class="price-display">Order times: @TotalFrequency</label>
-                        <div class="price-display">Rs.@DiscountPrice</div><br />
+                        <div class="price-display">Rs.@DiscountPrice</div>
                     }
                     else
                     {
-                        <br />
-                        <div class="frequency-display">Total @TotalFrequency times purchase</div><br />
+                        <div class="frequency-display">Total @TotalFrequency times purchase</div>
                     }
-                    
+                    <br />
                     <label for="sugar">Total Price:</label>
                     <div class="price-display">Total Price Rs.@TotalPrice</div><br />
 
-                    <button class="btn btn-primary" type="submit">Confirm</button>
+                    <button class="btn btn-primary" type="submit" @onclick="GetDiscountForCustomer">Confirm</button>
                 </div>
             </div><br />
             @if (!string.IsNullOrEmpty(message))
