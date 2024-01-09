@@ -51,8 +51,12 @@
                     <th>Name</th>
                     <th>Price</th>
                     <th>Order</th>
-                    <th>Price Update</th>
-                    <th>Delete</th>
+                    
+                    @if (UserServices.CurrentUser.Role == Role.Admin)
+                    {
+                        <th>Price Update</th>
+                        <th>Delete</th>
+                    }
                 </tr>
             </thead>
             <tbody>
@@ -64,12 +68,16 @@
                         <td>
                             <button class="btn btn-primary" @onclick="() => orderPage(coffee)">Order</button>
                         </td>
+
+                        @if (UserServices.CurrentUser.Role == Role.Admin)
+                        {
                         <td>
                             <button class="btn btn-warning" @onclick="() => getEditCoffee(coffee)">Update</button>
                         </td>
                         <td>
                             <button class="btn btn-danger" @onclick="() => deleteCoffee(coffee)">Delete</button>
                         </td>
+                        }
                     </tr>
                 }
 
@@ -84,8 +92,11 @@
                 <tr>
                     <th>Coffee Flavor Name</th>
                     <th>Coffee Flavor Price</th>
-                    <th>Price Update</th>
-                    <th>Delete</th>
+                    @if (UserServices.CurrentUser.Role == Role.Admin)
+                    {
+                        <th>Price Update</th>
+                        <th>Delete</th>
+                    }
                 </tr>
             </thead>
             <tbody>
@@ -96,12 +107,15 @@
                         <tr>
                             <td>@flavor.AddName</td>
                             <td>@flavor.AddPrice</td>
-                            <td>
-                                <button class="btn btn-warning" @onclick="() => getEditAddInFlavor(flavor)">Update</button>
-                            </td>
-                            <td>
-                                <button class="btn btn-danger" @onclick="() => deleteFlavor(flavor)">Delete</button>
-                            </td>
+                            @if (UserServices.CurrentUser.Role == Role.Admin)
+                            {
+                                <td>
+                                    <button class="btn btn-warning" @onclick="() => getEditAddInFlavor(flavor)">Update</button>
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger" @onclick="() => deleteFlavor(flavor)">Delete</button>
+                                </td>
+                            }
                         </tr>
                     }
                 }

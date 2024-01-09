@@ -10,7 +10,7 @@
                     <h1 class="card-title text-center mb-5">Bislerium Coffee Station</h1>
                     <div class="form-group">
                         <label class="form-label">Role</label>
-                        <select class="form-control" id="roleSelect" @bind="role">
+                        <select class="form-select" id="roleSelect" @bind="role">
                             @foreach (var roles in Enum.GetValues(typeof(BisleriumCafe.Data.Enums.Role)))
                             {
                                 <option value="@roles">@roles</option>
@@ -31,8 +31,6 @@
 </body>
 
 @code {
-    [CascadingParameter]
-    private GlobalState globalState { get; set; } = new GlobalState();
     private bool showDefaultCredentials { get; set; }
     private Role role { get; set; }
     private string password { get; set; }
@@ -51,7 +49,6 @@
         { 
             errorMessage = "User is not available!";
         }
-        globalState.CurrentUser = null;
         errorMessage = "";
     }
 
@@ -61,10 +58,10 @@
         {
             errorMessage = "";
             User user;
-            globalState.CurrentUser = UserServices.Login(role, password);
-            NavManager.NavigateTo(globalState.CurrentUser.HasInitialPassword ? "/change-password" : "/");
+            UserServices.Login(role, password);
+            NavManager.NavigateTo(UserServices.CurrentUser.HasInitialPassword ? "/change-password" : "/");
 
-            if (globalState.CurrentUser != null)
+            if (UserServices.CurrentUser != null)
             {
                 errorMessage = "user exists";
             }

@@ -17,7 +17,6 @@ namespace BisleriumCafe
                 });
 
             builder.Services.AddMauiBlazorWebView();
-            builder.Services.AddSingleton<GlobalState>();
             QuestPDF.Settings.License = LicenseType.Community;
 
 #if DEBUG

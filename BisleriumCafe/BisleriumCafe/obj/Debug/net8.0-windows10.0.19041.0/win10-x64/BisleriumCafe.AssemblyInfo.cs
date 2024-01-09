@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BisleriumCafe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+91cda231cc5c55947bf4040217edd4fba170ff79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+4a009d6d9ae9a68a30dcaa5d515f019c2d6c5d53")]
 [assembly: System.Reflection.AssemblyProductAttribute("BisleriumCafe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BisleriumCafe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

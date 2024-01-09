@@ -13,7 +13,7 @@ namespace BisleriumCafe.Data.Services
     {
         public const Role LoginRole = Role.Admin;
         public const string Password = "Admin";
-
+        public static User CurrentUser { get; set; }
         public static List<User> GetAllUser()
         {
             string appUsersFilePath = Utils.GetUsersFilePath();
@@ -76,6 +76,7 @@ namespace BisleriumCafe.Data.Services
             {
                 throw new Exception(loginErrorMessage);
             }
+            CurrentUser = user;
             return user;
         }
 

@@ -21,31 +21,51 @@ namespace BisleriumCafe.Data.Services
             return new List<CoffeeOrder>();
         }
 
-        public static string CreateOrder(string CoffeeName, double CoffeePrice, string AddFlavorName, double AddFlavorPrice, string CustomerNumber, double TotalPrice)
+        public static string CreateNewOrder(string CoffeeName, double CoffeePrice, string AddFlavorName, double AddFlavorPrice, string CustomerNumber, double TotalPrice)
         {
-            if (!string.IsNullOrEmpty(CustomerNumber))
+            if (string.IsNullOrEmpty(CoffeeName))
             {
-                List<CoffeeOrder> orders = GetAllOrders();
+                Console.WriteLine("empty coffee");
+                return "Coffee name is empty!";
+            }
 
-                //Fix the model class before adding.
-                orders.Add(
-                    new CoffeeOrder
-                    {
-                        CoffeeName = CoffeeName,
-                        CoffeePrice = CoffeePrice,
-                        AddFlavorName = AddFlavorName,
-                        AddFlavorPrice = AddFlavorPrice,
-                        CustomerPhoneNumber = CustomerNumber,
-                        TotalPrice = TotalPrice,
-                    });
+            if (CoffeePrice <= 0)
+            {
+                Console.WriteLine("empty price");
 
-                SaveAllOrders(orders);
-                return "success";
+                return "Invalid coffee price!";
+            }
+
+            if (string.IsNullOrEmpty(CustomerNumber))
+            {
+                Console.WriteLine("empty customer");
+
+                return $"The customer number is empty!{CustomerNumber}";
             }
             else
             {
-                return "The customer number is empty!";
-            }
+
+                if (!CustomerService.UpdateCustomer(CustomerNumber))
+                {
+					CustomerService.CreateCustomer(CustomerNumber);
+
+				}
+			}
+
+            List<CoffeeOrder> orders = GetAllOrders();
+
+            orders.Add(new CoffeeOrder
+            {
+                CoffeeName = CoffeeName,
+                CoffeePrice = CoffeePrice,
+                AddFlavorName = AddFlavorName,
+                AddFlavorPrice = AddFlavorPrice,
+                CustomerPhoneNumber = CustomerNumber,
+                TotalPrice = TotalPrice,
+            });
+
+            SaveAllOrders(orders);
+            return "success";
         }
 
         public static void SaveAllOrders(List<CoffeeOrder> orders)
@@ -59,5 +79,5 @@ namespace BisleriumCafe.Data.Services
             var json = JsonSerializer.Serialize(orders);
             File.WriteAllText(orderFilePath, json);
         }
-    }
+	}
 }

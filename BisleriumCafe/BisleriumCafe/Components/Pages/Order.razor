@@ -7,17 +7,17 @@
             <div class="coffee-details">
 
                 <label for="coffeeName">Coffee Name:</label>
-                <input id="coffeeName" class="form-control" readonly value="@CoffeeName" />
+                <input id="coffeeName" class="form-control" readonly @bind="CoffeeName" />
 
                 <label for="coffeePrice">Coffee Price:</label>
-                <input id="coffeePrice" class="form-control price-input" readonly @bind="@ParseCoffeePrice" />
+                <input id="coffeePrice" class="form-control price-input" readonly @bind="ParseCoffeePrice" />
                 <br />
 
                 <div class="add">
                     <div class="add-in-input">
                         <label for="add">Add in flavors</label>
                         <div class="add-in-input">
-                            <select id="add-ins" class="form-control"  @onchange="(args) => CalculateTotalCoffeePrice(args.Value.ToString())">
+                            <select id="add-ins" class="form-select" @onchange="(args) => CalculateTotalCoffeePrice(args)">
                                 @foreach (var addIn in listOfAddIns)
                                 {
                                     <option value="@addIn.AddPrice">@($"{addIn.AddName} - Rs {addIn.AddPrice}")</option>
@@ -28,7 +28,7 @@
                 </div>
 
                 <label for="customerNumber">Customer Number:</label>
-                <input id="customerNumber" class="form-control" value="@CustomerNumber" /><br />
+                <input id="customerNumber" class="form-control" @bind="CustomerNumber" /><br />
 
                 <label for="sugar">Total Price:</label>
                 <div class="price-display">Rs.@TotalPrice</div><br />
@@ -53,7 +53,11 @@
     [Parameter]
     public string CoffeePrice { get; set; }
 
-    public int CustomerNumber { get; set; }
+    private string AddFlavorName { get; set; }
+
+    private double AddFlavorPrice { get; set; }
+
+    public string CustomerNumber { get; set; }
 
     public double ParseCoffeePrice { get; set; }
 
@@ -88,25 +92,41 @@
         }
     }
 
-    private void CalculateTotalCoffeePrice(string selectedPrice)
+    private void CalculateTotalCoffeePrice(ChangeEventArgs e)
     {
-        if (double.TryParse(selectedPrice, out double addInPrice))
+        if (double.TryParse(e.Value.ToString(), out double addInPrice))
         {
-            TotalPrice = ParseCoffeePrice + addInPrice;
+            // Assuming listOfAddIns contains CoffeeAddIn objects with AddName and AddPrice properties
+            var selectedAddIn = listOfAddIns.FirstOrDefault(addIn => addIn.AddPrice.ToString() == e.Value.ToString());
+
+            if (selectedAddIn != null)
+            {
+                AddFlavorName = selectedAddIn.AddName;
+                AddFlavorPrice = selectedAddIn.AddPrice;
+                TotalPrice = ParseCoffeePrice + AddFlavorPrice;
+            }
         }
     }
 
     private void CoffeeOrder()
     {
-        // var response = OrderService.CreateOrder(CoffeeName, CoffeePrice, AddFlavorName, AddFlavorPrice, CustomerPhoneNumber, TotalPrice)
-        // if (response == "success")
-        // {
-        //     message = $"{CoffeeName} order successfully";
-        // }
-        // else
-        // {
-        //     message = response;
-        // }
+        double price;
+        if (double.TryParse(CoffeePrice, out price))
+        {
+            var response = OrderService.CreateNewOrder(CoffeeName, price, AddFlavorName, AddFlavorPrice, CustomerNumber, TotalPrice);
+            if (response == "success")
+            {
+                message = $"{CoffeeName} order successfully";
+            }
+            else
+            {
+                message = response;
+            }
+        }
+        else
+        {
+            message = "The price in not string";   
+        }
     }
 }
 

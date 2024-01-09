@@ -1,31 +1,48 @@
 ﻿@inject NavigationManager NavManager
 
 <div class="sidebar">
-    <div class="top-row ps-3 navbar navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="">BisleriumCafe</a>
-        </div>
-    </div>
+	<div class="top-row ps-3 navbar navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="">BisleriumCafe</a>
+		</div>
+	</div>
 
-    <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+	<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
-    <div class="nav-scrollable" style="background-color: darkblue;"  onclick="document.querySelector('.navbar-toggler').click()">
-        <nav class="flex-column">
-            <div class="nav-item px-3">
-                <NavLink class="nav-link" href="home" Match="NavLinkMatch.All">
-                    <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-                </NavLink>
-            </div>
-            <div class="nav-item px-3">
-                <NavLink class="nav-link" href="addCoffee">
-                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Add Coffee
-                </NavLink>
-            </div>
-            <div class="nav-item px-3">
-                <NavLink class="nav-link" href="change-password">
-                    <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Change Password
-                </NavLink>
-            </div>
-        </nav>
-    </div>
+	<div class="nav-scrollable" style="background-color: darkblue;" onclick="document.querySelector('.navbar-toggler').click()">
+		<nav class="flex-column">
+			<div class="nav-item px-3">
+				<NavLink class="nav-link" href="home" Match="NavLinkMatch.All">
+					<span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
+				</NavLink>
+			</div>
+			@if (UserServices.CurrentUser!=null && UserServices.CurrentUser.Role == Role.Admin)
+			{
+				<div class="nav-item px-3">
+					<NavLink class="nav-link" href="addCoffee">
+						<span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Add Coffee
+					</NavLink>
+				</div>
+			}
+			<div class="nav-item px-3">
+				<NavLink class="nav-link" href="change-password">
+					<span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Change Password
+				</NavLink>
+			</div>
+
+			<div class="nav-item px-3">
+				<NavLink class="nav-link" role="button" @onclick="LogoutHandler">
+					<span class="bi bi-box-arrow-right" aria-hidden="true"></span> Log Out
+				</NavLink>
+			</div>
+		</nav>
+	</div>
 </div>
+
+@code {
+	private void LogoutHandler(){
+		UserServices.CurrentUser = null;
+		NavManager.NavigateTo("/");
+
+	}
+}
