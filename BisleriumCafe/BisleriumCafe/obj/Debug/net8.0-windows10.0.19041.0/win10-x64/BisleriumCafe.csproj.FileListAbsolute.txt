@@ -633,3 +633,10 @@ C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCa
 C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EPPlus.dll
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EPPlus.Interfaces.dll
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\EPPlus.System.Drawing.dll
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Win32.SystemEvents.dll
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Drawing.Common.dll
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Pkcs.dll

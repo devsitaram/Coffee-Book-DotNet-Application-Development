@@ -36,10 +36,13 @@
 
                     @if (ShowDiscount)
                     {
-                        <div class="price-display">Discount Price Rs.@DiscountPrice</div><br />
+
+                        <label class="price-display">Order times: @TotalFrequency</label>
+                        <div class="price-display">Rs.@DiscountPrice</div><br />
                     }
                     else
                     {
+                        <br />
                         <div class="frequency-display">Total @TotalFrequency times purchase</div><br />
                     }
                     
@@ -156,7 +159,7 @@
             {
                 DiscountVerify = true;
                 ShowDiscount = true;
-                var TotalFrequency = CustomerService.DiscountForCustomer(CustomerNumber);
+                TotalFrequency = CustomerService.DiscountForCustomer(CustomerNumber);
                 if (TotalFrequency >= 15)
                 {
                     DiscountPrice = (TotalPrice * 15 / 100);

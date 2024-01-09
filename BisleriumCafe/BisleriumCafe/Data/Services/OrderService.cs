@@ -10,6 +10,7 @@ namespace BisleriumCafe.Data.Services
 {
     public class OrderService
     {
+        // get all the orders
         public static List<CoffeeOrder> GetAllOrders()
         {
             string orderFilePath = Utils.GetOrderFilePath();
@@ -21,6 +22,7 @@ namespace BisleriumCafe.Data.Services
             return new List<CoffeeOrder>();
         }
 
+        // create the new order
         public static string CreateNewOrder(string CoffeeName, double CoffeePrice, string AddFlavorName, double AddFlavorPrice, string CustomerNumber, double TotalPrice)
         {
             if (string.IsNullOrEmpty(CoffeeName))
@@ -61,6 +63,7 @@ namespace BisleriumCafe.Data.Services
             return "success";
         }
 
+        // save the order in order pathss
         public static void SaveAllOrders(List<CoffeeOrder> orders)
         {
             string orderFilePath = Utils.GetOrderFilePath();

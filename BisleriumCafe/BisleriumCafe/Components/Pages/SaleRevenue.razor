@@ -1,0 +1,233 @@
+﻿@page "/revenue"
+
+<div class="container">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%">
+        
+        <button type="submit" class="btn btn-primary">Log In</button>
+        <div class="add-in-input">
+            <div class="dropdown">
+                <button class="dropbtn btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Export By</button>
+                <div class="dropdown-content">
+                    <button @onclick="PDFGenerate">PDF</button>
+                    <button @onclick="CSVGenerate">CSV</button>
+                    <button @onclick="JSONGenerate">JSON</button>
+                    <button @onclick="ExcelGenerate">EXCEL</button>
+                </div>
+            </div>
+        </div>
+    </div><br>
+   
+    @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <br />
+        <div class="alert alert-success" role="alert">
+            @successMessage
+        </div>
+    }
+
+    @if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <br />
+        <div class="alert alert-success" role="alert">
+            @errorMessage
+        </div>
+    }
+
+    <div>
+        <h3 for="coffeeName">Sale History</h3>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Coffee Name</th>
+                    <th>Coffee Price</th>
+                    <th>Add In Flavor</th>
+                    <th>Add In Price</th>
+                    <th>Customer Number</th>
+                    <th>Total Price</th>
+                    <th>Order Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var orderCoffee in listOfCoffeeOrder)
+                {
+                    <tr>
+                        <td>@orderCoffee.CoffeeName</td>
+                        <td>@orderCoffee.CoffeePrice</td>
+                        <td>@orderCoffee.AddFlavorName</td>
+                        <td>@orderCoffee.AddFlavorPrice</td>
+                        <td>@orderCoffee.CustomerPhoneNumber</td>
+                        <td>@orderCoffee.TotalPrice</td>
+                        <td>@orderCoffee.OrderDate</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    private List<CoffeeOrder> listOfCoffeeOrder;
+    private CoffeeOrder coffeeOrderModel = new();
+    private string successMessage = "";
+    private string errorMessage = "";
+
+    protected override void OnInitialized()
+    {
+        try
+        {
+            listOfCoffeeOrder = OrderService.GetAllOrders();
+        }
+        catch
+        {
+            listOfCoffeeOrder = new List<CoffeeOrder>();
+        }
+    }
+
+    private async Task PDFGenerate()
+    {
+        var response = PDFServices.PDFFileGenerate();
+        if(response == null)
+        {
+            errorMessage = "Fails to PDF report file generate!";
+        } 
+        else
+        {
+            successMessage = response;
+        }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
+    }
+
+    private async Task CSVGenerate()
+    {
+        var response = CSVServices.CSVFileGenerate();
+        if (response == null)
+        {
+            errorMessage = "Fails to CSV report file generate!";
+        }
+        else
+        {
+            successMessage = response;
+        }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
+    }
+
+    private async Task JSONGenerate()
+    {
+        var response = JSONServices.JSONFileGenerate(listOfCoffeeOrder);
+        if (response == null)
+        {
+            errorMessage = "Fails to JSON report file generate!";
+        }
+        else
+        {
+            successMessage = response;
+        }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
+    }
+
+    private async Task ExcelGenerate()
+    {
+        var response = ExcelServices.ExcelFileGenerate();
+        if (response == null)
+        {
+            errorMessage = "Fails to EXCEL report file generate!";
+        }
+        else
+        {
+            successMessage = response;
+        }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
+    }
+
+    private void ClearMessage()
+    {
+        successMessage = "";
+        errorMessage = "";
+    }
+}
+
+<style>
+
+    .align-content-end {
+        align-items: flex-end; /* for flexbox */
+        justify-items: end; /* for grid */
+    }
+
+    /* Hide overflow and enable scrolling for the table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        display: block; /* Enable overflow property */
+    }
+
+    /* Style table headers */
+    th {
+        background-color: #f2f2f2;
+        text-align: left;
+        padding: 8px;
+    }
+
+    /* Style table data cells */
+    td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Set a maximum width for table cells */
+    td, th {
+        max-width: 250px; /* Adjust as needed */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Display ellipsis for overflowing content */
+    }
+
+    /* Style the dropdown button */
+    .dropbtn {
+        background-color: #FF3333;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid;
+        cursor: pointer;
+        border-radius: 8px;
+        color: #FFFFFF;
+    }
+
+    /* Style the dropdown content (the list of buttons) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FFFFFF;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 8px;
+    }
+
+    /* Show the dropdown content (the list of buttons) on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Style the buttons within the dropdown */
+    .dropdown-content button {
+        width: 100%;
+        padding: 8px 16px;
+        text-align: left;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+        /* Change background color of buttons on hover */
+        .dropdown-content button:hover {
+            background-color: #3333FF;
+            color: #FFFFFF;
+            border-radius: 8px;
+        }
+</style>

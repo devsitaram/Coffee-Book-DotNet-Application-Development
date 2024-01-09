@@ -29,9 +29,14 @@ namespace BisleriumCafe.Data.Services
             return Path.Combine(GetAppDirectoryPath(), "orders.json");
         }
 
+        public static string GetRevenueFilePath()
+        {
+            return Path.Combine(GetAppDirectoryPath(), "sale_transactions.json");
+        }
+
         public static string GetAddInFilePath()
         {
-            return Path.Combine(GetAppDirectoryPath(), "add_ins.json");
+            return Path.Combine(GetAppDirectoryPath(), "add_ins_flavors.json");
         }
 
         public static string GetUserFilePath()
