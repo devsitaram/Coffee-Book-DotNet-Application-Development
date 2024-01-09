@@ -25,30 +25,23 @@ namespace BisleriumCafe.Data.Services
         {
             if (string.IsNullOrEmpty(CoffeeName))
             {
-                Console.WriteLine("empty coffee");
-                return "Coffee name is empty!";
+                return "Coffee is empty!";
             }
 
             if (CoffeePrice <= 0)
             {
-                Console.WriteLine("empty price");
-
                 return "Invalid coffee price!";
             }
 
             if (string.IsNullOrEmpty(CustomerNumber))
             {
-                Console.WriteLine("empty customer");
-
-                return $"The customer number is empty!{CustomerNumber}";
+                return $"The customer number is empty!";
             }
             else
             {
-
                 if (!CustomerService.UpdateCustomer(CustomerNumber))
                 {
 					CustomerService.CreateCustomer(CustomerNumber);
-
 				}
 			}
 

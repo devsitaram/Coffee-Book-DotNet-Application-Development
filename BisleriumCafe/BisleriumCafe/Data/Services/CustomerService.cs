@@ -76,10 +76,30 @@ namespace BisleriumCafe.Data.Services
 			}
 			catch (Exception ex)
 			{
-				//return $"Error in CreateOrUpdateCustomer: {ex.Message}";
 				return false;
 			}
 		}
+
+		public static int DiscountForCustomer(string CustomerNumber)
+		{
+			try
+			{
+				var existingCustomer = GetByCustomerNumber(CustomerNumber);
+				if (existingCustomer != null)
+				{
+					return existingCustomer.Frequency;
+				}
+				else
+				{
+					return 0;
+				}
+			}
+			catch (Exception ex)
+			{
+				return 0;
+			}
+		}
+
 		private static void SaveAllCustomer(List<Customer> Customer)
 		{
 			string CustomerFilePath = Utils.GetCustomersFilePath();

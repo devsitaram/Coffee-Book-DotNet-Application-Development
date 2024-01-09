@@ -3,7 +3,7 @@
 <body>
     <form class="row g-3" @onsubmit="CoffeeOrder">
         <div class="container">
-            <h1>Order Coffee</h1>
+            <h2>Order Coffee</h2>
             <div class="coffee-details">
 
                 <label for="coffeeName">Coffee Name:</label>
@@ -25,16 +25,29 @@
                             </select>
                         </div>
                     </div>
+                </div><br />
+
+                <div>
+                    <label for="customerNumber">Customer Number:</label>
+                    <input id="customerNumber" class="form-control" @bind="CustomerNumber"/><br />
+
+                    <label for="sugar">You get 15% Discount after 15 days</label>
+                    <button class="btn btn-primary" @onclick="GetDiscountForCustomer">Discount verify</button><br />
+
+                    @if (ShowDiscount)
+                    {
+                        <div class="price-display">Discount Price Rs.@DiscountPrice</div><br />
+                    }
+                    else
+                    {
+                        <div class="frequency-display">Total @TotalFrequency times purchase</div><br />
+                    }
+                    
+                    <label for="sugar">Total Price:</label>
+                    <div class="price-display">Total Price Rs.@TotalPrice</div><br />
+
+                    <button class="btn btn-primary" type="submit">Confirm</button>
                 </div>
-
-                <label for="customerNumber">Customer Number:</label>
-                <input id="customerNumber" class="form-control" @bind="CustomerNumber" /><br />
-
-                <label for="sugar">Total Price:</label>
-                <div class="price-display">Rs.@TotalPrice</div><br />
-
-                <button class="btn btn-primary" type="submit">Confirm</button>
-
             </div><br />
             @if (!string.IsNullOrEmpty(message))
             {
@@ -61,6 +74,8 @@
 
     public double ParseCoffeePrice { get; set; }
 
+    public double DiscountPrice { get; set; }
+
     public double TotalPrice { get; set; }
 
     private List<CoffeeAddIn> listOfAddIns;
@@ -68,6 +83,11 @@
     private CoffeeAddIn addInsModel = new();
 
     private string message = "";
+
+    private int TotalFrequency { get; set; }
+
+    private bool ShowDiscount = false;
+    private bool DiscountVerify = false;
 
     protected override void OnInitialized()
     {
@@ -88,7 +108,6 @@
         catch (Exception ex)
         {
             listOfAddIns = new List<CoffeeAddIn>();
-            Console.WriteLine($"Error in OnInitialized: {ex.Message}");
         }
     }
 
@@ -103,7 +122,7 @@
             {
                 AddFlavorName = selectedAddIn.AddName;
                 AddFlavorPrice = selectedAddIn.AddPrice;
-                TotalPrice = ParseCoffeePrice + AddFlavorPrice;
+                TotalPrice = ParseCoffeePrice + AddFlavorPrice - DiscountPrice;
             }
         }
     }
@@ -126,6 +145,30 @@
         else
         {
             message = "The price in not string";   
+        }
+    }
+
+    private void GetDiscountForCustomer()
+    {
+        if (!string.IsNullOrEmpty(CustomerNumber))
+        {
+            if (!DiscountVerify)
+            {
+                DiscountVerify = true;
+                ShowDiscount = true;
+                var TotalFrequency = CustomerService.DiscountForCustomer(CustomerNumber);
+                if (TotalFrequency >= 15)
+                {
+                    DiscountPrice = (TotalPrice * 15 / 100);
+                    TotalPrice = ParseCoffeePrice + AddFlavorPrice - DiscountPrice;
+                    message = $"Discount applied: Rs.{DiscountPrice}";
+                }
+            }
+        }
+        else
+        {
+            ShowDiscount = false;
+            message = "Please enter a customer number.";
         }
     }
 }
