@@ -13,7 +13,7 @@ namespace BisleriumCafe.Data.Models
         public double CoffeePrice { get; set; }
         public string AddFlavorName { get; set; }
         public double AddFlavorPrice { get; set; }
-        public string CustomerPhoneNumber { get; set; }
+        public long CustomerNumber { get; set; }
         public double TotalPrice { get; set; }
         public DateTime OrderDate { get; set; } = DateTime.Now;
     }

@@ -29,7 +29,7 @@ namespace BisleriumCafe.Data.Services.Export
 
                             foreach (var item in deserializedData)
                             {
-                                writer.WriteLine($"{Escape(item.CoffeeName)}, {item.CoffeePrice}, {Escape(item.AddFlavorName)}, {item.AddFlavorPrice}, {Escape(item.CustomerPhoneNumber)}, {item.TotalPrice}, {item.OrderDate}");
+                                writer.WriteLine($"{Escape(item.CoffeeName)}, {item.CoffeePrice}, {Escape(item.AddFlavorName)}, {item.AddFlavorPrice}, {item.CustomerNumber}, {item.TotalPrice}, {item.OrderDate}");
                             }
                         }
                         return csvOutputPath;

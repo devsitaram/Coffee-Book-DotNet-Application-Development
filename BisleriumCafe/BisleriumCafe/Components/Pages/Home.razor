@@ -11,7 +11,7 @@
         <input id="coffeeName" class="form-control" readonly @bind="coffeeModel.CoffeeName" />
 
         <label for="coffeePrice">Coffee Price</label>
-        <input id="coffeePrice" class="form-control" @bind="coffeeModel.CoffeePrice" />
+            <input id="coffeePrice" class="form-control" type="number" @bind="coffeeModel.CoffeePrice" />
 
             <button class="btn btn-primary" @onclick="UpdateCoffee">Save</button>
             <button class="btn btn-primary" @onclick="UpdateCancel">Cancel</button>
@@ -25,7 +25,7 @@
             <input id="coffeeName" class="form-control" readonly @bind="flavorAddInModel.AddName" />
 
             <label for="coffeePrice">Coffee Flavor Price</label>
-            <input id="coffeePrice" class="form-control" @bind="flavorAddInModel.AddPrice" />
+            <input id="coffeePrice" class="form-control" type="number" @bind="flavorAddInModel.AddPrice" />
 
             <button class="btn btn-primary" @onclick="UpdateFlavor">Save</button>
             <button class="btn btn-primary" @onclick="UpdateCancel">Cancel</button>
@@ -41,7 +41,6 @@
         </div>
     }
     <br />
-
 
     <div>
         <h3 for="coffeeName">Types of Coffee</h3>

@@ -29,7 +29,7 @@
 
                 <div>
                     <label for="customerNumber">Customer Number:</label>
-                    <input id="customerNumber" class="form-control" @bind="CustomerNumber"/><br />
+                    <input id="customerNumber" class="form-control" type="number" inputmode="numeric" maxlength="10" @bind="CustomerNumber" /><br />
 
                     <label for="sugar">Get 15% discount after 15 days</label>
 
@@ -70,7 +70,7 @@
 
     private double AddFlavorPrice { get; set; }
 
-    public string CustomerNumber { get; set; }
+    public long CustomerNumber { get; set; }
 
     public double ParseCoffeePrice { get; set; }
 
@@ -150,7 +150,7 @@
 
     private void GetDiscountForCustomer()
     {
-        if (!string.IsNullOrEmpty(CustomerNumber))
+        if (CustomerNumber == 0)
         {
             if (!DiscountVerify)
             {

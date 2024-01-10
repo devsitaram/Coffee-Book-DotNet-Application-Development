@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><br />
    
     @if (!string.IsNullOrEmpty(successMessage))
     {
@@ -81,7 +81,7 @@
                             <td>@orderCoffee.CoffeePrice</td>
                             <td>@orderCoffee.AddFlavorName</td>
                             <td>@orderCoffee.AddFlavorPrice</td>
-                            <td>@orderCoffee.CustomerPhoneNumber</td>
+                            <td>@orderCoffee.CustomerNumber</td>
                             <td>@orderCoffee.TotalPrice</td>
                             <td>@orderCoffee.OrderDate</td>
                         </tr>
@@ -96,7 +96,7 @@
                             <td>@orderCoffee.CoffeePrice</td>
                             <td>@orderCoffee.AddFlavorName</td>
                             <td>@orderCoffee.AddFlavorPrice</td>
-                            <td>@orderCoffee.CustomerPhoneNumber</td>
+                            <td>@orderCoffee.CustomerNumber</td>
                             <td>@orderCoffee.TotalPrice</td>
                             <td>@orderCoffee.OrderDate</td>
                         </tr>
@@ -139,7 +139,7 @@
 
     private async Task PDFGenerate()
     {
-        var response = PDFServices.PDFFileGenerate();
+        var response = PDFServices.PDFFileOrderHistoryGenerate();
         if(response == null)
         {
             errorMessage = "Fails to PDF report file generate!";
@@ -148,7 +148,7 @@
         {
             successMessage = response;
         }
-        await Task.Delay(1500); // Wait for 1 second
+        await Task.Delay(2000); // Wait for 1 second
         ClearMessage();
     }
 
@@ -163,7 +163,7 @@
         {
             successMessage = response;
         }
-        await Task.Delay(1500); // Wait for 1 second
+        await Task.Delay(2000); // Wait for 1 second
         ClearMessage();
     }
 
@@ -178,7 +178,7 @@
         {
             successMessage = response;
         }
-        await Task.Delay(1500); // Wait for 1 second
+        await Task.Delay(2000); // Wait for 1 second
         ClearMessage();
     }
 
@@ -193,7 +193,7 @@
         {
             successMessage = response;
         }
-        await Task.Delay(1500); // Wait for 1 second
+        await Task.Delay(2000); // Wait for 1 second
         ClearMessage();
     }
 

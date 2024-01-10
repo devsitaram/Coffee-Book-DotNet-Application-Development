@@ -10,7 +10,7 @@ namespace BisleriumCafe.Data.Services
 {
 	public class CustomerService
 	{
-		public static string CreateCustomer(string customerNumber)
+		public static string CreateCustomer(long customerNumber)
 		{
 			try
 			{
@@ -50,13 +50,13 @@ namespace BisleriumCafe.Data.Services
 			return JsonSerializer.Deserialize<List<Customer>>(json);
 		}
 
-		public static Customer GetByCustomerNumber(string customerNumber)
+		public static Customer GetByCustomerNumber(long customerNumber)
 		{
 			List<Customer> listOfCustomer = GetAllCustomer();
 			return listOfCustomer.FirstOrDefault(x => x.CustomerNumber == customerNumber);
 		}
 
-		public static bool UpdateCustomer(string CustomerNumber)
+		public static bool UpdateCustomer(long CustomerNumber)
 		{
 			try
 			{
@@ -80,7 +80,7 @@ namespace BisleriumCafe.Data.Services
 			}
 		}
 
-		public static int DiscountForCustomer(string CustomerNumber)
+		public static int DiscountForCustomer(long CustomerNumber)
 		{
 			try
 			{

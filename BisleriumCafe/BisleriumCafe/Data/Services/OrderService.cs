@@ -23,7 +23,7 @@ namespace BisleriumCafe.Data.Services
         }
 
         // create the new order
-        public static string CreateNewOrder(string CoffeeName, double CoffeePrice, string AddFlavorName, double AddFlavorPrice, string CustomerNumber, double TotalPrice)
+        public static string CreateNewOrder(string CoffeeName, double CoffeePrice, string AddFlavorName, double AddFlavorPrice, long CustomerNumber, double TotalPrice)
         {
             if (string.IsNullOrEmpty(CoffeeName))
             {
@@ -35,7 +35,7 @@ namespace BisleriumCafe.Data.Services
                 return "Invalid coffee price!";
             }
 
-            if (string.IsNullOrEmpty(CustomerNumber))
+            if (CustomerNumber == 0)
             {
                 return $"The customer number is empty!";
             }
@@ -55,7 +55,7 @@ namespace BisleriumCafe.Data.Services
                 CoffeePrice = CoffeePrice,
                 AddFlavorName = AddFlavorName,
                 AddFlavorPrice = AddFlavorPrice,
-                CustomerPhoneNumber = CustomerNumber,
+                CustomerNumber = CustomerNumber,
                 TotalPrice = TotalPrice,
             });
 

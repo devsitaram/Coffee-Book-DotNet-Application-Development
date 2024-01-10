@@ -43,7 +43,7 @@ namespace BisleriumCafe.Data.Services.Export
                                 worksheet.Cells[row, 2].Value = item.CoffeePrice;
                                 worksheet.Cells[row, 3].Value = item.AddFlavorName;
                                 worksheet.Cells[row, 4].Value = item.AddFlavorPrice;
-                                worksheet.Cells[row, 5].Value = item.CustomerPhoneNumber;
+                                worksheet.Cells[row, 5].Value = item.CustomerNumber;
                                 worksheet.Cells[row, 6].Value = item.TotalPrice;
                                 worksheet.Cells[row, 7].Value = item.OrderDate;
 

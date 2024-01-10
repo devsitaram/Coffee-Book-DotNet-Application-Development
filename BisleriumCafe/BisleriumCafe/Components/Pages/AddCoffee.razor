@@ -10,7 +10,7 @@
         <input id="coffeeName" class="form-control" @bind="@Name" />
 
         <label for="coffeePrice">Price:</label>
-        <input id="coffeePrice" class="form-control" @bind="@Price" /><br />
+        <input id="coffeePrice" class="form-control" type="number" inputmode="numeric" @bind="@Price" /><br />
 
         <button class="btn btn-primary" @onclick="AddNewCoffee">Add Coffee</button>
         <button class="btn btn-primary" @onclick="AddInCoffeeFlavor">Add In Flavor</button><br />

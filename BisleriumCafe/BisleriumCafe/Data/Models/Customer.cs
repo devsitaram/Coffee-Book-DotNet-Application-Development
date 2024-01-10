@@ -8,7 +8,7 @@ namespace BisleriumCafe.Data.Models
 {
 	public class Customer
 	{
-		public required string CustomerNumber { get; set; }
+		public required long CustomerNumber { get; set; }
 		public int Frequency { get; set; } = 1;
 	}
 }
