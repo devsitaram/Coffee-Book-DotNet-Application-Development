@@ -1,5 +1,9 @@
 Components\Layout\MainLayout.razor.css
 Components\Layout\NavMenu.razor.css
+Components\Pages\AddInsCoffee.razor.css
+Components\Pages\Home.razor.css
+Components\Pages\Order.razor.css
+Components\Pages\SaleRevenue.razor.css
 OpenSans-Regular.ttf
 appicon.ico
 appiconLargeTile.scale-100.png

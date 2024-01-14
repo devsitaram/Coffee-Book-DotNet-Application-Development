@@ -10,6 +10,7 @@ namespace BisleriumCafe.Data.Services.Export
 {
     public class JSONServices
     {
+        // JSON formate export the data
         public static string JSONFileGenerate(List<CoffeeOrder> orders)
         {
             try
@@ -21,11 +22,11 @@ namespace BisleriumCafe.Data.Services.Export
                 {
                     Directory.CreateDirectory(appDirectoryFilePath);
                 }
-                var json = JsonSerializer.Serialize(orders);
-                File.WriteAllText(jsonFilePath, json);
+                var json = JsonSerializer.Serialize(orders); // data serializer where object to string
+				File.WriteAllText(jsonFilePath, json);
                 return jsonFilePath;
             }
-            catch(Exception ex)
+            catch(Exception e)
             {
                 return null;
             }

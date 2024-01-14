@@ -11,40 +11,49 @@ namespace BisleriumCafe.Data.Services
     {
         private const char _segmentDelimiter = ':';
 
+        // get the system file pathe where create the new local document file
         public static string GetAppDirectoryPath()
         {
             return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Bislerium-Cafe-Data");
         }
 
+        // get user file path
         public static string GetUsersFilePath()
         {
             return Path.Combine(GetAppDirectoryPath(), "users.json");
         }
+
+        // get the customer file path
 		public static string GetCustomersFilePath()
 		{
 			return Path.Combine(GetAppDirectoryPath(), "customers.json");
 		}
+
+        // customer order file path
 		public static string GetOrderFilePath()
         {
             return Path.Combine(GetAppDirectoryPath(), "orders.json");
         }
 
+        // total purchase coffee file path 
         public static string GetRevenueFilePath()
         {
             return Path.Combine(GetAppDirectoryPath(), "sale_transactions.json");
         }
 
+        // add-ins coffee flavor path directory
         public static string GetAddInFilePath()
         {
             return Path.Combine(GetAppDirectoryPath(), "add_ins_flavors.json");
         }
 
+        // user file path directory
         public static string GetUserFilePath()
         {
             return Path.Combine(GetAppDirectoryPath(), "users.json");
         }
 
-        // coffee utils
+        // coffee file path directory
         public static string GetCoffeeFilePath()
         {
             return Path.Combine(GetAppDirectoryPath(), "coffee.json");
@@ -70,6 +79,8 @@ namespace BisleriumCafe.Data.Services
             );
         }
 
+
+        // password hash form is check the success or not
         public static bool VerifyHash(string input, string hashString)
         {
             string[] segments = hashString.Split(_segmentDelimiter);

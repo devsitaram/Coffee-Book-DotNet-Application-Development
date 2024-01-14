@@ -30,25 +30,25 @@
     <AppXManifest Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-01-10T09:37:49.852</Modified>
+      <Modified>2024-01-14T10:20:15.084</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-01-10T09:37:47.877</Modified>
+      <Modified>2024-01-14T10:20:14.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.runtimeconfig.json">
       <PackagePath>BisleriumCafe.runtimeconfig.json</PackagePath>
-      <Modified>2024-01-09T18:16:13.661</Modified>
+      <Modified>2024-01-11T16:43:05.425</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.dll">
       <PackagePath>BisleriumCafe.dll</PackagePath>
-      <Modified>2024-01-10T09:37:44.963</Modified>
+      <Modified>2024-01-14T10:20:14.095</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>BisleriumCafe.exe</PackagePath>
-      <Modified>2024-01-10T09:37:45.291</Modified>
+      <Modified>2024-01-14T10:20:14.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -304,7 +304,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\BisleriumCafe.deps.json">
       <PackagePath>BisleriumCafe.deps.json</PackagePath>
-      <Modified>2024-01-09T18:16:13.543</Modified>
+      <Modified>2024-01-11T16:43:05.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -720,11 +720,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\BisleriumCafe.styles.css">
       <PackagePath>wwwroot\BisleriumCafe.styles.css</PackagePath>
-      <Modified>2024-01-05T02:37:27.908</Modified>
+      <Modified>2024-01-10T20:39:34.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\BisleriumCafe.bundle.scp.css">
       <PackagePath>wwwroot\BisleriumCafe.bundle.scp.css</PackagePath>
-      <Modified>2024-01-05T02:37:27.911</Modified>
+      <Modified>2024-01-10T20:39:34.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\.nuget\packages\bootstrap\5.3.2\contentFiles\any\any\wwwroot\css\bootstrap.css">
       <PackagePath>wwwroot\css\bootstrap.css</PackagePath>
@@ -909,6 +909,22 @@
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
       <Modified>2024-01-05T02:37:13.842</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\AddInsCoffee.razor.css">
+      <PackagePath>Components\Pages\AddInsCoffee.razor.css</PackagePath>
+      <Modified>2024-01-10T19:46:03.205</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\Home.razor.css">
+      <PackagePath>Components\Pages\Home.razor.css</PackagePath>
+      <Modified>2024-01-10T19:39:04.156</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\Order.razor.css">
+      <PackagePath>Components\Pages\Order.razor.css</PackagePath>
+      <Modified>2024-01-10T19:46:47.419</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\SaleRevenue.razor.css">
+      <PackagePath>Components\Pages\SaleRevenue.razor.css</PackagePath>
+      <Modified>2024-01-10T20:39:33.669</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -10,6 +10,7 @@ namespace BisleriumCafe.Data.Services.Export
 {
     public class CSVServices
     {
+        // CSV file data export
         public static string CSVFileGenerate()
         {
             var filePath = Utils.GetOrderFilePath();
@@ -38,6 +39,8 @@ namespace BisleriumCafe.Data.Services.Export
             }
             return null;
         }
+
+        // set space
         private static string Escape(string value)
         {
             return "\"" + value?.Replace("\"", "\"\"") + "\"";

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BisleriumCafe.Data.Enums
 {
+    // user role
     public enum Role
     {
         Staff,

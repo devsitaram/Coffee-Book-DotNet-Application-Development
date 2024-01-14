@@ -58,6 +58,20 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Remove="Components\Pages\AddInsCoffee.razor.css" />
+      <None Remove="Components\Pages\Home.razor.css" />
+      <None Remove="Components\Pages\Order.razor.css" />
+      <None Remove="Components\Pages\SaleRevenue.razor.css" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="Components\Pages\AddInsCoffee.razor.css" />
+      <Content Include="Components\Pages\Home.razor.css" />
+      <Content Include="Components\Pages\Order.razor.css" />
+      <Content Include="Components\Pages\SaleRevenue.razor.css" />
+    </ItemGroup>
+
+    <ItemGroup>
         <PackageReference Include="bootstrap" Version="5.3.2" />
         <PackageReference Include="EPPlus" Version="7.0.5" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />

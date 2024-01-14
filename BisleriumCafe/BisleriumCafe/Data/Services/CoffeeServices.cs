@@ -19,7 +19,7 @@ namespace BisleriumCafe.Data.Services
 
                 if (existingCoffee)
                 {
-                    // Coffee with the same name already exists, update its price
+                    // Coffee with the same name already exists
                     return "Coffee is already exists.";
                 }
                 else
@@ -67,49 +67,62 @@ namespace BisleriumCafe.Data.Services
 
         public static List<Coffee> GetAllCoffee()
         {
-            string coffeeFilePath = Utils.GetCoffeeFilePath();
-            if (!File.Exists(coffeeFilePath))
+            try
             {
+                string coffeeFilePath = Utils.GetCoffeeFilePath();
+                if (!File.Exists(coffeeFilePath))
+                {
+                    return new List<Coffee>();
+                }
+                var json = File.ReadAllText(coffeeFilePath);
+                return JsonSerializer.Deserialize<List<Coffee>>(json);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
                 return new List<Coffee>();
             }
-            var json = File.ReadAllText(coffeeFilePath);
-            return JsonSerializer.Deserialize<List<Coffee>>(json);
+            
         }
 
-        public static void SeedCoffee()
-        {
-            //CreateCoffee("Espresso", 2.99);
-            //CreateCoffee("Latte", 3.49);
-            //CreateCoffee("Cappuccino", 3.99);
-        }
-
-        public static Coffee GetByName(string coffeeName)
+        public static Coffee CoffeeGetByName(string coffeeName)
         {
             List<Coffee> listOfCoffee = GetAllCoffee();
             return listOfCoffee.FirstOrDefault(x => x.CoffeeName == coffeeName);
         }
 
+        // this function can be delete the coffee name
         public static List<Coffee> DeleteCoffee(string coffeeName)
         {
-            List<Coffee> listOfCoffee = GetAllCoffee();
-            Coffee coffee = listOfCoffee.FirstOrDefault(x => x.CoffeeName == coffeeName);
-
-            if (coffee == null)
-            {
-                throw new Exception("Coffee not available.");
-            }
-
-            listOfCoffee.Remove(coffee); // Remove the coffee from the list
-            SaveAllCoffee(listOfCoffee); // Save the updated list of coffees
-            return listOfCoffee; // Return the updated list of coffees
-        }
-
-        private static void SaveAllCoffee(List<Coffee> coffee)
-        {
-            string coffeeFilePath = Utils.GetCoffeeFilePath();
-            string appCoffeeFilePath = Utils.GetAppDirectoryPath();
             try
             {
+                List<Coffee> listOfCoffee = GetAllCoffee();
+                Coffee coffee = listOfCoffee.FirstOrDefault(x => x.CoffeeName == coffeeName);
+
+                if (coffee == null)
+                {
+                    throw new Exception("Coffee not available.");
+                }
+
+                listOfCoffee.Remove(coffee);
+                SaveAllCoffee(listOfCoffee);
+                return listOfCoffee;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new List<Coffee>();
+            }
+        }
+
+        // save the customer data in app file directory
+        private static void SaveAllCoffee(List<Coffee> coffee)
+        {
+            try
+            {
+                string coffeeFilePath = Utils.GetCoffeeFilePath();
+                string appCoffeeFilePath = Utils.GetAppDirectoryPath();
+
                 if (!Directory.Exists(appCoffeeFilePath))
                 {
                     Directory.CreateDirectory(appCoffeeFilePath);

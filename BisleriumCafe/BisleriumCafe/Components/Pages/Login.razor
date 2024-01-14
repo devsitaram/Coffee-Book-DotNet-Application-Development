@@ -24,6 +24,14 @@
                             <button type="submit" class="btn btn-primary btn-lg btn-lg w-100" onclick="@LoginHandler">Log In</button>
                         </div>
                     </div>
+
+                    @if (!string.IsNullOrEmpty(errorMessage))
+                    {
+                        <br />
+                        <div class="alert alert-success" role="alert">
+                            @errorMessage
+                        </div>
+                    }
                 </div>
             </div>
         </div>
@@ -56,14 +64,20 @@
     {
         try
         {
-            errorMessage = "";
-            User user;
-            UserServices.Login(role, password);
-            NavManager.NavigateTo(UserServices.CurrentUser.HasInitialPassword ? "/change-password" : "/");
-
-            if (UserServices.CurrentUser != null)
+            if (!string.IsNullOrEmpty(password))
             {
-                errorMessage = "user exists";
+                errorMessage = "";
+                User user;
+                UserServices.Login(role, password);
+                NavManager.NavigateTo(UserServices.CurrentUser.HasInitialPassword ? "/change-password" : "/");
+                if (UserServices.CurrentUser != null)
+                {
+                    errorMessage = "user exists";
+                }
+            }
+            else
+            {
+                errorMessage = "The password is empty!";
             }
         }
         catch (Exception e)

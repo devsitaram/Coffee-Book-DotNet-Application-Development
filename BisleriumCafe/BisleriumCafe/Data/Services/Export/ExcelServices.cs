@@ -11,6 +11,7 @@ namespace BisleriumCafe.Data.Services.Export
 {
     public class ExcelServices
     {
+        // data export in excel file
         public static string ExcelFileGenerate()
         {
             var filePath = Utils.GetOrderFilePath();
@@ -28,14 +29,14 @@ namespace BisleriumCafe.Data.Services.Export
                         {
                             ExcelWorksheet worksheet = package.Workbook.Worksheets.Add("Orders");
 
-                            // Headers
+                            // table column name
                             string[] headers = { "Coffee Name", "Coffee Price", "Add In Flavor", "Add In Price", "Customer Number", "Total Price", "Order Date" };
                             for (int i = 0; i < headers.Length; i++)
                             {
                                 worksheet.Cells[1, i + 1].Value = headers[i];
                             }
 
-                            // Data
+                            // table Data
                             int row = 2;
                             foreach (var item in deserializedData)
                             {

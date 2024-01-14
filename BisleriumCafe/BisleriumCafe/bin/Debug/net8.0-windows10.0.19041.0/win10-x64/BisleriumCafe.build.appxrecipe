@@ -682,6 +682,18 @@
     <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Layout\NavMenu.razor.css">
       <PackagePath>Components\Layout\NavMenu.razor.css</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\AddInsCoffee.razor.css">
+      <PackagePath>Components\Pages\AddInsCoffee.razor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\Home.razor.css">
+      <PackagePath>Components\Pages\Home.razor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\Order.razor.css">
+      <PackagePath>Components\Pages\Order.razor.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\Components\Pages\SaleRevenue.razor.css">
+      <PackagePath>Components\Pages\SaleRevenue.razor.css</PackagePath>
+    </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Users\Lenovo\.nuget\packages\microsoft.windowsappsdk\1.3.230724000\buildTransitive\..\tools\MSIX\win10-x86\Microsoft.WindowsAppRuntime.1.3.msix">

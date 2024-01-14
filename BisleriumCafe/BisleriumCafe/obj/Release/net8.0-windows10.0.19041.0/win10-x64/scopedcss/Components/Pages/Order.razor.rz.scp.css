@@ -1,0 +1,36 @@
+    .container[b-31pdd5v9u0] {
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    .coffee-details[b-31pdd5v9u0] {
+        margin-bottom: 20px;
+    }
+
+    label[b-31pdd5v9u0] {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-control[b-31pdd5v9u0] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .price-input[b-31pdd5v9u0] {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .price-display[b-31pdd5v9u0] {
+        margin-top: 10px;
+        padding: 8px;
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }

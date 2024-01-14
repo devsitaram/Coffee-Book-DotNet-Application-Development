@@ -10,8 +10,12 @@
                 <input id="coffeeName" class="form-control" readonly @bind="CoffeeName" />
 
                 <label for="coffeePrice">Coffee Price:</label>
-                <input id="coffeePrice" class="form-control price-input" readonly @bind="ParseCoffeePrice" />
-                <br />
+                <input id="coffeePrice" class="form-control price-input" readonly @bind="ParseCoffeePrice" /><br />
+
+                <label for="coffeePrice">Quantity: @TotalQuantity</label>
+                <button class="btn btn-primary" style="white-space" onclick=SubtractPriceCalculate>-</button>
+                <button class="btn btn-primary" @onclick="AddPriceCalculate">+</button>
+                <br><br />
 
                 <div class="add">
                     <div class="add-in-input">
@@ -20,7 +24,9 @@
                             <select id="add-ins" class="form-select" @onchange="(args) => CalculateTotalCoffeePrice(args)">
                                 @foreach (var addIn in listOfAddIns)
                                 {
-                                    <option value="@addIn.AddPrice">@($"{addIn.AddName} - Rs {addIn.AddPrice}")</option>
+                                    <option value="@addIn.AddPrice">
+                                        @($"{addIn.AddName} {(addIn.AddPrice > 0 ? $"- Rs {addIn.AddPrice}" : "")}")
+                                    </option>
                                 }
                             </select>
                         </div>
@@ -48,7 +54,7 @@
 
                     <button class="btn btn-primary" type="submit" @onclick="GetDiscountForCustomer">Confirm</button>
                 </div>
-            </div><br />
+            </div>
             @if (!string.IsNullOrEmpty(message))
             {
                 <div class="alert alert-success" role="alert">
@@ -70,24 +76,29 @@
 
     private double AddFlavorPrice { get; set; }
 
-    public long CustomerNumber { get; set; }
+    private long CustomerNumber { get; set; }
 
-    public double ParseCoffeePrice { get; set; }
+    private double ParseCoffeePrice { get; set; }
 
-    public double DiscountPrice { get; set; }
+    private double DiscountPrice { get; set; }
 
-    public double TotalPrice { get; set; }
+    private int TotalQuantity { get; set; }
+
+    private double TotalPrice { get; set; }
 
     private List<CoffeeAddIn> listOfAddIns;
-
-    private CoffeeAddIn addInsModel = new();
 
     private string message = "";
 
     private int TotalFrequency { get; set; }
 
+    private double AddPrice { get; set; }
+
     private bool ShowDiscount = false;
+
     private bool DiscountVerify = false;
+
+    private CoffeeAddIn addInsModel = new();
 
     protected override void OnInitialized()
     {
@@ -97,6 +108,8 @@
             if (double.TryParse(CoffeePrice, out double parsedPrice))
             {
                 ParseCoffeePrice = parsedPrice;
+                AddPrice = ParseCoffeePrice;
+                TotalQuantity = 1;
             }
             else
             {
@@ -111,6 +124,25 @@
         }
     }
 
+    // add price and quantity calculate
+    private void AddPriceCalculate()
+    {
+        AddPrice = TotalPrice + ParseCoffeePrice;
+        TotalPrice = AddPrice;
+        TotalQuantity = TotalQuantity + 1;
+    }
+
+    // subtract price and quantity calculate
+    private void SubtractPriceCalculate()
+    {
+        if (TotalQuantity > 1)
+        {
+            AddPrice = TotalPrice - ParseCoffeePrice;
+            TotalPrice = AddPrice;
+            TotalQuantity = TotalQuantity - 1;
+        }
+    }
+
     private void CalculateTotalCoffeePrice(ChangeEventArgs e)
     {
         if (double.TryParse(e.Value.ToString(), out double addInPrice))
@@ -122,7 +154,7 @@
             {
                 AddFlavorName = selectedAddIn.AddName;
                 AddFlavorPrice = selectedAddIn.AddPrice;
-                TotalPrice = ParseCoffeePrice + AddFlavorPrice - DiscountPrice;
+                TotalPrice = AddPrice + AddFlavorPrice - DiscountPrice;
             }
         }
     }
@@ -132,7 +164,7 @@
         double price;
         if (double.TryParse(CoffeePrice, out price))
         {
-            var response = OrderService.CreateNewOrder(CoffeeName, price, AddFlavorName, AddFlavorPrice, CustomerNumber, TotalPrice);
+            var response = OrderService.CreateNewOrder(CoffeeName, price, AddFlavorName, AddFlavorPrice, TotalQuantity, CustomerNumber, DiscountPrice, TotalPrice);
             if (response == "success")
             {
                 message = $"{CoffeeName} order successfully";
@@ -148,6 +180,7 @@
         }
     }
 
+    // discount method
     private void GetDiscountForCustomer()
     {
         if (CustomerNumber == 0)
@@ -172,43 +205,3 @@
         }
     }
 }
-
-
-<style>
-    .container {
-        margin: 20px auto;
-        max-width: 600px;
-        padding: 0 20px;
-    }
-
-    .coffee-details {
-        margin-bottom: 20px;
-    }
-
-    label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    .form-control {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .price-input {
-        color: #333;
-        font-weight: bold;
-    }
-
-    .price-display {
-        margin-top: 10px;
-        padding: 8px;
-        background-color: #f0f0f0;
-        font-weight: bold;
-    }
-</style>

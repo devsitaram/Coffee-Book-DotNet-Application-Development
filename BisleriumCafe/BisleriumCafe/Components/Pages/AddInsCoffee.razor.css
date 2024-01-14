@@ -1,0 +1,47 @@
+﻿
+<style>
+    .container {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .add-coffee-form {
+        margin-bottom: 20px;
+    }
+
+        .add-coffee-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .add-coffee-form input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th, .table td {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    .btn {
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>

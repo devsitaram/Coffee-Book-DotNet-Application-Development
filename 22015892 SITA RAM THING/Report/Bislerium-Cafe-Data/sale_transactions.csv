@@ -1,0 +1,11 @@
+Coffee Name, Coffee Price, Add In Flavor, Add In Price, Customer Number, Total Price, Order Date
+"Cappuccino", 90, "N/S", 0, 9812345678, 90, 1/11/2024 1:09:37 AM
+"Cappuccino", 90, "Ice Cream", 20, 9818232323, 110, 1/11/2024 10:13:02 AM
+" Latte", 90, "Cinnamon", 25, 9812345678, 115, 1/11/2024 10:16:58 AM
+"Mocha", 120, "N/S", 0, 9812345678, 120, 1/11/2024 10:17:08 AM
+"Flat white", 100, "Ice Cream", 20, 9812345678, 120, 1/11/2024 10:17:19 AM
+" Latte", 90, "Ginger", 30, 9812345678, 120, 1/11/2024 10:17:33 AM
+"Flat white", 100, "N/S", 0, 9807589123, 100, 1/11/2024 10:17:55 AM
+"Americano", 100, "N/S", 0, 9801011010, 100, 1/11/2024 10:19:33 AM
+"Americano", 100, "N/S", 0, 9801011010, 100, 1/11/2024 10:23:54 AM
+" Latte", 90, "Ginger", 30, 9810203040, 120, 1/11/2024 10:24:22 AM

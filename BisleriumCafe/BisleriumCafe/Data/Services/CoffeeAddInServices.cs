@@ -10,18 +10,28 @@ namespace BisleriumCafe.Data.Services
 {
     internal class CoffeeAddInServices
     {
+        // get all the add-in flavors from file directory
         public static List<CoffeeAddIn> GetAllAddIn()
         {
-            string addInFilePath = Utils.GetAddInFilePath();
-            if (File.Exists(addInFilePath))
+            try
             {
-                var json = File.ReadAllText(addInFilePath);
-                return JsonSerializer.Deserialize<List<CoffeeAddIn>>(json);
-            }
+                string addInFilePath = Utils.GetAddInFilePath();
+                if (File.Exists(addInFilePath))
+                {
+                    var json = File.ReadAllText(addInFilePath);
+                    return JsonSerializer.Deserialize<List<CoffeeAddIn>>(json);
+                }
 
-            return new List<CoffeeAddIn>();
+                return new List<CoffeeAddIn>();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return new List<CoffeeAddIn>();
+            }
         }
 
+        // insert or add the new add in flavor
         public static string CoffeeAddInFlavor(string name, double price)
         {
             try
@@ -50,6 +60,7 @@ namespace BisleriumCafe.Data.Services
             }
         }
 
+        // update the add in flavor
         public static string UpdateAddInFlavor(string addName, double addPrice)
         {
             try
@@ -71,27 +82,18 @@ namespace BisleriumCafe.Data.Services
             }
             catch (Exception ex)
             {
-                return $"Enter valid data: {ex.Message}"; // Return an error message or handle differently based on requirements
+                return $"Enter valid data: {ex.Message}"; 
             }
         }
 
-        public static void SeedAddIns()
-        {
-            //CreateAddIn("No Flavor", 0.0);
-            //CreateAddIn("Cinnamon", 25.00);
-            //CreateAddIn("Honey", 30.00);
-            //CreateAddIn("Ginger", 45.00);
-            //CreateAddIn("Chocolate", 20.00);
-            //CreateAddIn("Ice Cream", 35.00);
-        }
-
+        // save the app path directory
         public static void SaveAllAddIn(List<CoffeeAddIn> addIns)
         {
-            string addInFilePath = Utils.GetAddInFilePath();
-            string appDirectoryFilePath = Utils.GetAppDirectoryPath();
-
             try
             {
+                string addInFilePath = Utils.GetAddInFilePath();
+                string appDirectoryFilePath = Utils.GetAppDirectoryPath();
+
                 if (!Directory.Exists(appDirectoryFilePath))
                 {
                     Directory.CreateDirectory(appDirectoryFilePath);
@@ -111,31 +113,38 @@ namespace BisleriumCafe.Data.Services
             }
         }
 
+        // delete the add in coffee flavor
         public static List<CoffeeAddIn> DeleteAddIn(string addName)
         {
-            List<CoffeeAddIn> listOfAddIn = GetAllAddIn();
-            CoffeeAddIn coffee = listOfAddIn.FirstOrDefault(x => x.AddName == addName);
-
-            if (coffee == null)
+            try
             {
-                throw new Exception("Coffee not available.");
-            }
+                List<CoffeeAddIn> listOfAddIn = GetAllAddIn();
+                CoffeeAddIn coffee = listOfAddIn.FirstOrDefault(x => x.AddName == addName);
 
-            listOfAddIn.Remove(coffee); // Remove the coffee from the list
-            SaveAllAddIn(listOfAddIn); // Save the updated list of coffees
-            return listOfAddIn; // Return the updated list of coffees
+                if (coffee == null)
+                {
+                    throw new Exception("Coffee not available.");
+                }
+
+                listOfAddIn.Remove(coffee); // Remove the coffee from the list
+                SaveAllAddIn(listOfAddIn); // Save the updated list of coffees
+                return listOfAddIn; // Return the updated list of coffees
+            } 
+            catch (Exception ex)
+            {
+                Console.WriteLine(Console.Error);
+                return new List<CoffeeAddIn>();
+            }
+            
         }
 
-        // flavor add 
-        //public Task<List<CoffeeAddIn>> GetAllAddIns()
-        //{
-        //    new CoffeeAddIn { AddName = "Cinnamon", AddPrice = 10 },
-        //    new CoffeeAddIn { AddName = "Honey", AddPrice = 20 },
-        //    new CoffeeAddIn { AddName = "Ginger", AddPrice = 15 },
-        //    new CoffeeAddIn { AddName = "Chocolate", AddPrice = 25 },
-        //    new CoffeeAddIn { AddName = "Ice Cream", AddPrice = 5 }
-        //    // Add more add-ins as needed
-        //    return new List<CoffeeAddIn>
-        //}
+        public static void SeedAddIns()
+        {
+            var addins = GetAllAddIn();
+            if (addins == null)
+            {
+                CoffeeAddInFlavor("Select a Add-ins flavor", 0);
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BisleriumCafe.Data.Models
 {
+    // add-ins model
     public class CoffeeAddIn
     {
         public Guid Id { get; set; } = new Guid();

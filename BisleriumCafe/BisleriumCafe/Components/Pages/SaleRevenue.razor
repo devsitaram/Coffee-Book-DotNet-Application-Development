@@ -13,7 +13,7 @@
                         <div class="dropdown-content">
                             <button type="submit" @onclick='() => SortColumn("Name")'>Coffee Name</button>
                             <button type="submit" @onclick='() => SortColumn("Price")'>Coffee Price</button>
-                            <button type="submit" @onclick='() => SortColumn("Total")'>Total Price</button>
+                            <button type="submit" @onclick='() => SortColumn("Number")'>Customer Num</button>
                         </div>
                     </div>
                 </div>
@@ -33,14 +33,10 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
-                    <input @bind="searchTerm" class="form-control mb-6" type="search" placeholder="Search by name" aria-label="Search">
-                </div>
-                <div class="col-md-3">
-                    <button class="btn btn-outline-success mb-2" @onclick="Search">Search</button>
-                </div>
+                <button class="btnpdf col-md-10" @onclick="TopPurchaseCoffeeAndAddInsGenerate">Top 5 purchased coffees and add-ins</button>
             </div>
         </div>
+
     </div><br />
    
     @if (!string.IsNullOrEmpty(successMessage))
@@ -58,15 +54,28 @@
     }
 
     <div><br />
-        <h3 for="coffeeName">Sales Transactions</h3>
+        <div style="display: flex; justify-content: space-between">
+            <div class="col-md-6">
+            <b><h3 for="coffeeName">Sales Transactions</h3></b>
+            </div>
+            <div class="col-md-4">
+                <input @bind="searchTerm" class="form-control mb-6" type="search" placeholder="Search by name" aria-label="Search">
+            </div>
+            <div class="col-md-4">
+                <button class="btnsearch mb-2" @onclick="CoffeeSearch">Search</button>
+            </div>
+
+        </div><br />
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>Coffee Name</th>
                     <th>Coffee Price</th>
+                    <th>Total Quantity</th>
                     <th>Add In Flavor</th>
                     <th>Add In Price</th>
                     <th>Customer Number</th>
+                    <th>Discount Price</th>
                     <th>Total Price</th>
                     <th>Order Date</th>
                 </tr>
@@ -79,9 +88,11 @@
                         <tr>
                             <td>@orderCoffee.CoffeeName</td>
                             <td>@orderCoffee.CoffeePrice</td>
+                            <td>@orderCoffee.TotalQuantity</td>
                             <td>@orderCoffee.AddFlavorName</td>
                             <td>@orderCoffee.AddFlavorPrice</td>
                             <td>@orderCoffee.CustomerNumber</td>
+                            <td>@orderCoffee.DiscountPrice</td>
                             <td>@orderCoffee.TotalPrice</td>
                             <td>@orderCoffee.OrderDate</td>
                         </tr>
@@ -94,15 +105,16 @@
                         <tr>
                             <td>@orderCoffee.CoffeeName</td>
                             <td>@orderCoffee.CoffeePrice</td>
+                            <td>@orderCoffee.TotalQuantity</td>
                             <td>@orderCoffee.AddFlavorName</td>
                             <td>@orderCoffee.AddFlavorPrice</td>
                             <td>@orderCoffee.CustomerNumber</td>
+                            <td>@orderCoffee.DiscountPrice</td>
                             <td>@orderCoffee.TotalPrice</td>
                             <td>@orderCoffee.OrderDate</td>
                         </tr>
                     }
                 }
-                
             </tbody>
         </table>
     </div>
@@ -127,7 +139,6 @@
         try
         {
             listOfCoffeeOrder = OrderService.GetAllOrders();
-            // Initialize filteredCoffeeOrders with all data initially
             filteredCoffeeOrders = new List<CoffeeOrder>(listOfCoffeeOrder);
         }
         catch
@@ -137,9 +148,24 @@
         }
     }
 
+    private async Task TopPurchaseCoffeeAndAddInsGenerate()
+    {
+        var response = PDFServices.TopSellingPDFFileGenerate();
+        if(response == null)
+        {
+            errorMessage = "Top Sell PDF report file is not generate!";
+        } 
+        else
+        {
+            successMessage = response;
+        }
+        await Task.Delay(2000);
+        ClearMessage();
+    }
+
     private async Task PDFGenerate()
     {
-        var response = PDFServices.PDFFileOrderHistoryGenerate();
+        var response = PDFServices.PDFReportFileGenerate();
         if(response == null)
         {
             errorMessage = "Fails to PDF report file generate!";
@@ -157,7 +183,7 @@
         var response = CSVServices.CSVFileGenerate();
         if (response == null)
         {
-            errorMessage = "Fails to CSV report file generate!";
+            errorMessage = "CSV report file is not generate!";
         }
         else
         {
@@ -172,7 +198,7 @@
         var response = JSONServices.JSONFileGenerate(listOfCoffeeOrder);
         if (response == null)
         {
-            errorMessage = "Fails to JSON report file generate!";
+            errorMessage = "JSON report file is not generate!";
         }
         else
         {
@@ -187,7 +213,7 @@
         var response = ExcelServices.ExcelFileGenerate();
         if (response == null)
         {
-            errorMessage = "Fails to EXCEL report file generate!";
+            errorMessage = "EXCEL report file is not generate!";
         }
         else
         {
@@ -231,11 +257,11 @@
                     listOfCoffeeOrder = listOfCoffeeOrder.OrderByDescending(x => x.CoffeePrice).ToList();
                 break;
 
-            case "Total":
+            case "Number":
                 if (sortAsc)
-                    listOfCoffeeOrder = listOfCoffeeOrder.OrderBy(x => x.TotalPrice).ToList();
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderBy(x => x.CustomerNumber).ToList();
                 else
-                    listOfCoffeeOrder = listOfCoffeeOrder.OrderByDescending(x => x.TotalPrice).ToList();
+                    listOfCoffeeOrder = listOfCoffeeOrder.OrderByDescending(x => x.CustomerNumber).ToList();
                 break;
 
             // Add cases for other columns if needed
@@ -248,7 +274,7 @@
     }
 
     // order history search by coffee name search
-    private void Search()
+    private void CoffeeSearch()
     {
         if (!string.IsNullOrWhiteSpace(searchTerm))
         {
@@ -263,85 +289,3 @@
         }
     }
 }
-
-<style>
-
-    .align-content-end {
-        align-items: flex-end; /* for flexbox */
-        justify-items: end; /* for grid */
-    }
-
-    /* Hide overflow and enable scrolling for the table */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        overflow-x: auto; /* Enable horizontal scrolling */
-        display: block; /* Enable overflow property */
-    }
-
-    /* Style table headers */
-    th {
-        background-color: #f2f2f2;
-        text-align: left;
-        padding: 8px;
-    }
-
-    /* Style table data cells */
-    td {
-        padding: 8px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    /* Set a maximum width for table cells */
-    td, th {
-        max-width: 250px; /* Adjust as needed */
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; /* Display ellipsis for overflowing content */
-    }
-
-    /* Style the dropdown button */
-    .dropbtn {
-        background-color: #FF3333;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid;
-        cursor: pointer;
-        border-radius: 8px;
-        color: #FFFFFF;
-    }
-
-    /* Style the dropdown content (the list of buttons) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #FFFFFF;
-        min-width: 100px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        border-radius: 8px;
-    }
-
-    /* Show the dropdown content (the list of buttons) on hover */
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    /* Style the buttons within the dropdown */
-    .dropdown-content button {
-        width: 100%;
-        padding: 8px 16px;
-        text-align: left;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        border-radius: 8px;
-    }
-
-        /* Change background color of buttons on hover */
-        .dropdown-content button:hover {
-            background-color: #3333FF;
-            color: #FFFFFF;
-            border-radius: 8px;
-        }
-</style>

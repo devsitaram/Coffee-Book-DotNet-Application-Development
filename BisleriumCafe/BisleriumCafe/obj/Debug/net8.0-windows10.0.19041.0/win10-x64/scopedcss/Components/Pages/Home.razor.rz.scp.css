@@ -1,0 +1,47 @@
+
+<style>
+    .container[b-ac54ey6hos] {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .add-coffee-form[b-ac54ey6hos] {
+        margin-bottom: 20px;
+    }
+
+        .add-coffee-form label[b-ac54ey6hos] {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .add-coffee-form input[b-ac54ey6hos] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    .table[b-ac54ey6hos] {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th[b-ac54ey6hos], .table td[b-ac54ey6hos] {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .table th[b-ac54ey6hos] {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    .btn[b-ac54ey6hos] {
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style[b-ac54ey6hos]>

@@ -10,6 +10,7 @@ namespace BisleriumCafe.Data.Services
 {
 	public class CustomerService
 	{
+		// new customer add
 		public static string CreateCustomer(long customerNumber)
 		{
 			try
@@ -41,13 +42,22 @@ namespace BisleriumCafe.Data.Services
 
 		public static List<Customer> GetAllCustomer()
 		{
-			string CustomerFilePath = Utils.GetCustomersFilePath();
-			if (!File.Exists(CustomerFilePath))
+			try
 			{
+                string CustomerFilePath = Utils.GetCustomersFilePath();
+                if (!File.Exists(CustomerFilePath))
+                {
+                    return new List<Customer>();
+                }
+                var json = File.ReadAllText(CustomerFilePath);
+                return JsonSerializer.Deserialize<List<Customer>>(json);
+            }
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex);
 				return new List<Customer>();
 			}
-			var json = File.ReadAllText(CustomerFilePath);
-			return JsonSerializer.Deserialize<List<Customer>>(json);
+			
 		}
 
 		public static Customer GetByCustomerNumber(long customerNumber)
@@ -102,11 +112,12 @@ namespace BisleriumCafe.Data.Services
 
 		private static void SaveAllCustomer(List<Customer> Customer)
 		{
-			string CustomerFilePath = Utils.GetCustomersFilePath();
-			string appCustomerFilePath = Utils.GetAppDirectoryPath();
 			try
 			{
-				if (!Directory.Exists(appCustomerFilePath))
+                string CustomerFilePath = Utils.GetCustomersFilePath();
+                string appCustomerFilePath = Utils.GetAppDirectoryPath();
+
+                if (!Directory.Exists(appCustomerFilePath))
 				{
 					Directory.CreateDirectory(appCustomerFilePath);
 				}

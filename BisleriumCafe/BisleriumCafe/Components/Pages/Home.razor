@@ -2,7 +2,7 @@
 @inject NavigationManager NavManager
 
 <div class="container">
-    <h1>Add New Coffee</h1>
+    <h1>Bislerium Cafe</h1>
 
     @if (IsUpdateCoffee)
     {
@@ -65,16 +65,16 @@
                         <td>@coffee.CoffeeName</td>
                         <td>@coffee.CoffeePrice</td>
                         <td>
-                            <button class="btn btn-primary" @onclick="() => orderPage(coffee)">Order</button>
+                            <button class="btn btn-primary" @onclick="() => OrderPage(coffee)">Order</button>
                         </td>
 
                         @if (UserServices.CurrentUser.Role == Role.Admin)
                         {
                         <td>
-                            <button class="btn btn-warning" @onclick="() => getEditCoffee(coffee)">Update</button>
+                            <button class="btn btn-warning" @onclick="() => GetEditCoffee(coffee)">Update</button>
                         </td>
                         <td>
-                            <button class="btn btn-danger" @onclick="() => deleteCoffee(coffee)">Delete</button>
+                                <button class="btn btn-danger" @onclick="() => DeleteCoffee(coffee)">Delete</button>
                         </td>
                         }
                     </tr>
@@ -109,10 +109,10 @@
                             @if (UserServices.CurrentUser.Role == Role.Admin)
                             {
                                 <td>
-                                    <button class="btn btn-warning" @onclick="() => getEditAddInFlavor(flavor)">Update</button>
+                                    <button class="btn btn-warning" @onclick="() => GetEditAddInFlavor(flavor)">Update</button>
                                 </td>
                                 <td>
-                                    <button class="btn btn-danger" @onclick="() => deleteFlavor(flavor)">Delete</button>
+                                    <button class="btn btn-danger" @onclick="() => DeleteFlavor(flavor)">Delete</button>
                                 </td>
                             }
                         </tr>
@@ -155,7 +155,7 @@
     }
 
     // Methods for handling coffee operations
-    private void getEditCoffee(Coffee coffee)
+    private void GetEditCoffee(Coffee coffee)
     {
         try
         {
@@ -202,17 +202,19 @@
     }
     
     // delete coffee
-    private void deleteCoffee(Coffee coffee)
+    private void DeleteCoffee(Coffee coffee)
     {
         try
         {
             CoffeeServices.DeleteCoffee(coffee.CoffeeName);
             RefreshCoffeeList();
+            message = $"{coffee.CoffeeName} coffee is deleted.";
         }
         catch (Exception ex)
         {
             message = $"Error in delete coffee: {ex.Message}";
         }
+        ClearMessage();
     }
 
     private void RefreshCoffeeList()
@@ -233,7 +235,7 @@
     @* 
      this is the flavor transaction
     *@
-    private void getEditAddInFlavor(CoffeeAddIn addInFlavor)
+    private void GetEditAddInFlavor(CoffeeAddIn addInFlavor)
     {
         try
         {
@@ -269,7 +271,7 @@
         ClearMessage();
     }
 
-    private void deleteFlavor(CoffeeAddIn flavor)
+    private void DeleteFlavor(CoffeeAddIn flavor)
     {
         try
         {
@@ -299,12 +301,12 @@
 
     private async void ClearMessage()
     {
-        await Task.Delay(1000); // Wait for 1 second
+        await Task.Delay(1500); // Wait for 1 second
         message = "";
     }
 
     // navigate the order page
-    private void orderPage(Coffee coffee)
+    private void OrderPage(Coffee coffee)
     {
         if (coffee != null)
         {
@@ -316,50 +318,3 @@
         }
     }
 }
-
-<style>
-    .container {
-        margin: 20px auto;
-        max-width: 800px;
-        padding: 0 20px;
-    }
-
-    .add-coffee-form {
-        margin-bottom: 20px;
-    }
-
-        .add-coffee-form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .add-coffee-form input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-    .table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-        .table th, .table td {
-            padding: 8px;
-            border: 1px solid #ddd;
-        }
-
-        .table th {
-            background-color: #f0f0f0;
-            font-weight: bold;
-            text-align: left;
-        }
-
-    .btn {
-        padding: 6px 12px;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-</style>

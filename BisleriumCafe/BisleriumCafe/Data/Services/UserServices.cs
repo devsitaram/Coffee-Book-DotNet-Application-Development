@@ -12,46 +12,66 @@ namespace BisleriumCafe.Data.Services
     public class UserServices
     {
         public const Role LoginRole = Role.Admin;
+
         public const string Password = "Admin";
         public static User CurrentUser { get; set; }
+
+        // get all user
         public static List<User> GetAllUser()
         {
-            string appUsersFilePath = Utils.GetUsersFilePath();
-            if (!File.Exists(appUsersFilePath))
+            try
             {
+                string appUsersFilePath = Utils.GetUsersFilePath();
+                if (!File.Exists(appUsersFilePath))
+                {
+                    return new List<User>();
+                }
+                var json = File.ReadAllText(appUsersFilePath);
+                return JsonSerializer.Deserialize<List<User>>(json);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
                 return new List<User>();
             }
 
-            var json = File.ReadAllText(appUsersFilePath);
-            return JsonSerializer.Deserialize<List<User>>(json);
+            
         }
 
-        // create the user
+        // create the new user
         public static List<User> CreateNewUser(string password, Role role)
         {
-            List<User> users = GetAllUser();
-            bool usernameExists = users.Any(x => x.Role == role);
-
-            if (usernameExists)
+            try
             {
-                throw new Exception("Users already exists.");
-            }
+                List<User> users = GetAllUser();
+                bool usernameExists = users.Any(x => x.Role == role);
 
-            users.Add(
-                new User
+                if (usernameExists)
                 {
-                    PasswordHash = Utils.HashSecret(password),
-                    Role = role,
+                    throw new Exception("Users already exists.");
                 }
-            );
-            SaveAll(users);
-            return users;
+
+                users.Add(
+                    new User
+                    {
+                        PasswordHash = Utils.HashSecret(password),
+                        Role = role,
+                    }
+                );
+                SaveAll(users);
+                return users;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return new List<User>();
+            }
         }
 
+        // default register the both user
         public static void SeedUsers()
         {
             var users = GetAllUser().FirstOrDefault(x => x.Role == Role.Admin);
-
             if (users == null)
             {
                 CreateNewUser("Admin", Role.Admin);
@@ -59,28 +79,40 @@ namespace BisleriumCafe.Data.Services
             }
         }
 
+        // check the login user vali or not
         public static User Login(Role role, string password)
         {
-            var loginErrorMessage = "Invalid role or password.";
-            List<User> users = GetAllUser();
-            User user = users.FirstOrDefault(x => x.Role == role);
-            if (user == null)
+            try
             {
-                throw new Exception(loginErrorMessage);
+                var loginErrorMessage = "Invalid role or password.";
+                List<User> users = GetAllUser();
+                User user = users.FirstOrDefault(x => x.Role == role);
+                if (user == null)
+                {
+                    throw new Exception(loginErrorMessage);
+                } 
+                else
+                {
+                    //checking if the password is valid or not using password hash 
+                    bool passwordIsValid = Utils.VerifyHash(password, user.PasswordHash);
+
+                    if (!passwordIsValid)
+                    {
+                        throw new Exception(loginErrorMessage);
+                    }
+                    CurrentUser = user;
+                    return user;
+                }
             }
-
-            //checking if the password is valid or not using password hash 
-            bool passwordIsValid = Utils.VerifyHash(password, user.PasswordHash);
-
-            if (!passwordIsValid)
+            catch (Exception ex)
             {
-                throw new Exception(loginErrorMessage);
+                Console.WriteLine(ex.Message);
+                return new User();
             }
-            CurrentUser = user;
-            return user;
         }
 
-        public static string ChangePassword(Role role, string newPassword, string confirmPassword)
+        // password change
+        public static string ChangePassword(Guid Id, string newPassword, string confirmPassword)
         {
             try
             {
@@ -92,7 +124,7 @@ namespace BisleriumCafe.Data.Services
                 {
                     List<User> users = GetAllUser();
                     // Find the user based on the specified role
-                    User existingPassword = users.FirstOrDefault(x => x.Role == role);
+                    User existingPassword = users.FirstOrDefault(x => x.Id == Id);
                     if (existingPassword == null)
                     {
                         return "Invalid user role!";
@@ -100,7 +132,7 @@ namespace BisleriumCafe.Data.Services
                     else
                     {
                         // Proceed to change the password
-                        existingPassword.PasswordHash = Utils.HashSecret(newPassword); // Hash the new password
+                        existingPassword.PasswordHash = Utils.HashSecret(newPassword);
                         SaveAll(users);
                         return "success";
                     }
@@ -115,16 +147,23 @@ namespace BisleriumCafe.Data.Services
         // save user in app directory path
         private static void SaveAll(List<User> users)
         {
-            string appDataDirectoryPath = Utils.GetAppDirectoryPath();
-            string appUsersFilePath = Utils.GetUsersFilePath();
-
-            if (!Directory.Exists(appDataDirectoryPath))
+            try
             {
-                Directory.CreateDirectory(appDataDirectoryPath);
-            }
+                string appDataDirectoryPath = Utils.GetAppDirectoryPath();
+                string appUsersFilePath = Utils.GetUsersFilePath();
 
-            var json = JsonSerializer.Serialize(users);
-            File.WriteAllText(appUsersFilePath, json);
+                if (!Directory.Exists(appDataDirectoryPath))
+                {
+                    Directory.CreateDirectory(appDataDirectoryPath);
+                }
+
+                var json = JsonSerializer.Serialize(users);
+                File.WriteAllText(appUsersFilePath, json);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }

@@ -178,3 +178,250 @@ main[b-ynie2xntbd] {
         overflow-y: auto;
     }
 }
+/* /Components/Pages/AddInsCoffee.razor.rz.scp.css */
+
+<style>
+    .container[b-vgob72cefk] {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .add-coffee-form[b-vgob72cefk] {
+        margin-bottom: 20px;
+    }
+
+        .add-coffee-form label[b-vgob72cefk] {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .add-coffee-form input[b-vgob72cefk] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    .table[b-vgob72cefk] {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th[b-vgob72cefk], .table td[b-vgob72cefk] {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .table th[b-vgob72cefk] {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    .btn[b-vgob72cefk] {
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style[b-vgob72cefk]>
+/* /Components/Pages/Home.razor.rz.scp.css */
+
+<style>
+    .container[b-ac54ey6hos] {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .add-coffee-form[b-ac54ey6hos] {
+        margin-bottom: 20px;
+    }
+
+        .add-coffee-form label[b-ac54ey6hos] {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .add-coffee-form input[b-ac54ey6hos] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    .table[b-ac54ey6hos] {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th[b-ac54ey6hos], .table td[b-ac54ey6hos] {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .table th[b-ac54ey6hos] {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    .btn[b-ac54ey6hos] {
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style[b-ac54ey6hos]>
+/* /Components/Pages/Order.razor.rz.scp.css */
+    .container[b-31pdd5v9u0] {
+        margin: 20px auto;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    .coffee-details[b-31pdd5v9u0] {
+        margin-bottom: 20px;
+    }
+
+    label[b-31pdd5v9u0] {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-control[b-31pdd5v9u0] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .price-input[b-31pdd5v9u0] {
+        color: #333;
+        font-weight: bold;
+    }
+
+    .price-display[b-31pdd5v9u0] {
+        margin-top: 10px;
+        padding: 8px;
+        background-color: #f0f0f0;
+        font-weight: bold;
+    }
+/* /Components/Pages/SaleRevenue.razor.rz.scp.css */
+/* Default button styles */
+.btnpdf[b-qrvjkvqa90] {
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 8px;
+    color: green; /* Default font color */
+    border-color: green;
+}
+
+/* Hover effect */
+.btnpdf:hover[b-qrvjkvqa90] {
+    color: white;
+    background-color: forestgreen;
+}
+
+.btnsearch[b-qrvjkvqa90] {
+    background-color: white;
+    border: gray;
+    border: 1px solid;
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: gray;
+    width: 100px;
+    margin-left: 4px;
+}
+
+    .btnsearch:hover[b-qrvjkvqa90] {
+        color: white;
+        background-color: blue;
+    }
+
+.align-content-end[b-qrvjkvqa90] {
+    align-items: flex-end; /* for flexbox */
+    justify-items: end; /* for grid */
+}
+
+/* Hide overflow and enable scrolling for the table */
+table[b-qrvjkvqa90] {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    display: block; /* Enable overflow property */
+}
+
+/* Style table headers */
+th[b-qrvjkvqa90] {
+    background-color: #f2f2f2;
+    text-align: left;
+    padding: 8px;
+}
+
+/* Style table data cells */
+td[b-qrvjkvqa90] {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Set a maximum width for table cells */
+td[b-qrvjkvqa90], th[b-qrvjkvqa90] {
+    max-width: 250px; /* Adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Display ellipsis for overflowing content */
+}
+
+/* Style the dropdown button */
+.dropbtn[b-qrvjkvqa90] {
+    background-color: #FF3333;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+/* Style the dropdown content (the list of buttons) */
+.dropdown-content[b-qrvjkvqa90] {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* Show the dropdown content (the list of buttons) on hover */
+.dropdown:hover .dropdown-content[b-qrvjkvqa90] {
+    display: block;
+}
+
+/* Style the buttons within the dropdown */
+.dropdown-content button[b-qrvjkvqa90] {
+    width: 100%;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+    /* Change background color of buttons on hover */
+    .dropdown-content button:hover[b-qrvjkvqa90] {
+        background-color: #3333FF;
+        color: #FFFFFF;
+        border-radius: 8px;
+    }

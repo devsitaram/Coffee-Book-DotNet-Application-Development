@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BisleriumCafe.Data.Models
 {
+	// customer model where customer number is required
 	public class Customer
 	{
 		public required long CustomerNumber { get; set; }

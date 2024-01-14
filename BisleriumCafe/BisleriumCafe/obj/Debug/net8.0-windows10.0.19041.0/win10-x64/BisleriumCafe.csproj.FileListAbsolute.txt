@@ -640,3 +640,7 @@ C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCa
 C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Microsoft.Win32.SystemEvents.dll
 C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Drawing.Common.dll
 C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Pkcs.dll
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Pages\Order.razor.rz.scp.css
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Pages\AddInsCoffee.razor.rz.scp.css
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Documents\FinalYears\DotNet_Application_Development\BisleriumCafe\BisleriumCafe\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\Components\Pages\SaleRevenue.razor.rz.scp.css

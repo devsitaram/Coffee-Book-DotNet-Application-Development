@@ -1,0 +1,47 @@
+
+<style>
+    .container[b-vgob72cefk] {
+        margin: 20px auto;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+
+    .add-coffee-form[b-vgob72cefk] {
+        margin-bottom: 20px;
+    }
+
+        .add-coffee-form label[b-vgob72cefk] {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .add-coffee-form input[b-vgob72cefk] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+    .table[b-vgob72cefk] {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+        .table th[b-vgob72cefk], .table td[b-vgob72cefk] {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .table th[b-vgob72cefk] {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: left;
+        }
+
+    .btn[b-vgob72cefk] {
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style[b-vgob72cefk]>

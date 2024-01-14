@@ -23,57 +23,76 @@ namespace BisleriumCafe.Data.Services
         }
 
         // create the new order
-        public static string CreateNewOrder(string CoffeeName, double CoffeePrice, string AddFlavorName, double AddFlavorPrice, long CustomerNumber, double TotalPrice)
+        public static string CreateNewOrder(string CoffeeName, double CoffeePrice, string AddFlavorName, double AddFlavorPrice, int TotalQuantity, long CustomerNumber, double DiscountPrice, double TotalPrice)
         {
-            if (string.IsNullOrEmpty(CoffeeName))
+            try
             {
-                return "Coffee is empty!";
-            }
-
-            if (CoffeePrice <= 0)
-            {
-                return "Invalid coffee price!";
-            }
-
-            if (CustomerNumber == 0)
-            {
-                return $"The customer number is empty!";
-            }
-            else
-            {
-                if (!CustomerService.UpdateCustomer(CustomerNumber))
+                if (string.IsNullOrEmpty(CoffeeName))
                 {
-					CustomerService.CreateCustomer(CustomerNumber);
-				}
-			}
+                    return "Coffee is empty!";
+                }
 
-            List<CoffeeOrder> orders = GetAllOrders();
+                if (CoffeePrice <= 0)
+                {
+                    return "Invalid coffee price!";
+                }
 
-            orders.Add(new CoffeeOrder
+                if (CustomerNumber == 0)
+                {
+                    return $"The customer number is empty!";
+                }
+                else
+                {
+                    if (!CustomerService.UpdateCustomer(CustomerNumber))
+                    {
+                        CustomerService.CreateCustomer(CustomerNumber);
+                    }
+                }
+
+                List<CoffeeOrder> orders = GetAllOrders();
+
+                orders.Add(new CoffeeOrder
+                {
+                    CoffeeName = CoffeeName,
+                    CoffeePrice = CoffeePrice,
+                    AddFlavorName = AddFlavorName ?? "N/S",
+                    AddFlavorPrice = AddFlavorPrice,
+                    TotalQuantity = TotalQuantity,
+					CustomerNumber = CustomerNumber,
+                    DiscountPrice = DiscountPrice,
+                    TotalPrice = TotalPrice,
+                });
+
+                return SaveAllOrders(orders);
+                
+            }
+            catch (Exception ex)
             {
-                CoffeeName = CoffeeName,
-                CoffeePrice = CoffeePrice,
-                AddFlavorName = AddFlavorName,
-                AddFlavorPrice = AddFlavorPrice,
-                CustomerNumber = CustomerNumber,
-                TotalPrice = TotalPrice,
-            });
-
-            SaveAllOrders(orders);
-            return "success";
+                return $"Coffee is not add {ex.Message}";
+            }
         }
 
         // save the order in order pathss
-        public static void SaveAllOrders(List<CoffeeOrder> orders)
+        public static string SaveAllOrders(List<CoffeeOrder> orders)
         {
-            string orderFilePath = Utils.GetOrderFilePath();
-            string appDirectoryFilePath = Utils.GetAppDirectoryPath();
+            try
+            {
+                string orderFilePath = Utils.GetOrderFilePath();
+                string appDirectoryFilePath = Utils.GetAppDirectoryPath();
 
-            if (!Directory.Exists(appDirectoryFilePath))
-                Directory.CreateDirectory(appDirectoryFilePath);
+                if (!Directory.Exists(appDirectoryFilePath))
+                {
+                    Directory.CreateDirectory(appDirectoryFilePath);
+                }
 
-            var json = JsonSerializer.Serialize(orders);
-            File.WriteAllText(orderFilePath, json);
+                string json = orders.Any() ? JsonSerializer.Serialize(orders) : "[]";
+                File.WriteAllText(orderFilePath, json);
+                return "success";
+            }
+            catch (Exception ex)
+            {
+                return "Not success";
+            }
         }
 	}
 }

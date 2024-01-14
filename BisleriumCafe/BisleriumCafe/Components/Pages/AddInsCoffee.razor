@@ -1,0 +1,109 @@
+﻿@page "/addCoffee"
+
+@* @inject NavigationManager NavManager *@
+
+<div class="container">
+    <h1>Add New Coffee</h1>
+
+    <div class="add-coffee-form">
+        <label for="coffeeName">Name:</label>
+        <input id="coffeeName" class="form-control" @bind="@Name" />
+
+        <label for="coffeePrice">Price:</label>
+        <input id="coffeePrice" class="form-control" type="number" inputmode="numeric" @bind="@Price" /><br />
+
+        <button class="btn btn-primary" @onclick="AddNewCoffee">Add Coffee</button>
+        <button class="btn btn-primary" @onclick="AddInCoffeeFlavor">Add In Flavor</button><br />
+        
+        @if (!string.IsNullOrEmpty(successMessage))
+        {
+            <br />
+            <div class="alert alert-success" role="alert">
+                @successMessage
+            </div>
+        }
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <br />
+            <div class="alert alert-success" role="alert">
+                @errorMessage
+            </div>
+        }
+    </div>
+    <br />
+</div>
+
+@code {
+    private string Name = "";
+    private double Price = 0.0;
+    private string successMessage = "";
+    private string errorMessage = "";
+
+    private async Task AddNewCoffee()
+    {
+        try
+        {
+            if (!string.IsNullOrEmpty(Name) && Price > 0)
+            {
+                var coffeeResponse = CoffeeServices.CreateCoffee(Name, Price);
+                if (coffeeResponse == "success")
+                {
+                    Name = "";
+                    Price = 0.0;
+                    successMessage = "New coffee successfully added.";
+                }
+                else
+                {
+                    errorMessage = coffeeResponse;
+                }
+            }
+            else
+            {
+                errorMessage = "The Field is empty!";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error in AddCoffeeAction: {ex.Message}";
+        }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
+    }
+
+    private async Task AddInCoffeeFlavor()
+    {
+        try
+        {
+            if (!string.IsNullOrEmpty(Name) && Price > 0)
+            {
+                var addInResponse = CoffeeAddInServices.CoffeeAddInFlavor(Name, Price);
+                if (addInResponse == "success")
+                {
+                    Name = "";
+                    Price = 0.0;
+                    successMessage = "Add-In new flavor successful.";
+                }
+                else
+                {
+                    errorMessage = addInResponse;
+                }
+            }
+            else
+            {
+                errorMessage = "The field is empty!";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error in AddCoffeeAction: {ex.Message}";
+        }
+        await Task.Delay(1500); // Wait for 1 second
+        ClearMessage();
+    }
+
+    private void ClearMessage()
+    {
+        successMessage = "";
+        errorMessage = "";
+    }
+}
